@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 import BlogCard from "./BlogCard.js";
-import aiaa_org from "../Orgs/OrgData";
+// import { aiaa_org } from "../Orgs/OrgData";
 import Link from 'next/link';
 
 const Blog = () => {
-    const [list, setList] = useState(aiaa_org);
+    // const [list, setList] = useState(aiaa_org);
     return (
         <div>
             <h1>Blogs</h1>
             <div style={{ display: "flex" }}>
-                {list.map((member, index) => (
+                {/* {list.map((member, index) => (
                     <Link key={member.name + index} href='/Organization/{member.name}'>
                     <BlogCard
                         style={{ display: "flex" }}
@@ -18,7 +18,7 @@ const Blog = () => {
                         img={member.img}
                     />
                     </Link>
-                ))}
+                ))} */}
             </div>
         </div>
     )

@@ -1,7 +1,6 @@
 // import aiaa from "public/images/aiaa.png";
 
-
-export default aiaa_org = [
+const aiaa_org = [
     {
         "title": "AIAA",
         "name": "AIAA",
@@ -17,3 +16,5 @@ export default aiaa_org = [
         "description": "This is EEIE from UTD",
     },
 ]
+
+export default { aiaa_org };
