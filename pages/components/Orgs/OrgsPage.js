@@ -5,7 +5,7 @@ import OrgCard from "./OrgCard.js";
 import aiaa_org from "./OrgData.js";
 
 
-const OrgPage = () => {
+export default function OrgPage() {
     const [list, setList] = useState(aiaa_org);
     return (
         <div>
