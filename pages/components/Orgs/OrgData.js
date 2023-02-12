@@ -1,4 +1,4 @@
-import aiaa from "public/images/aiaa.png";
+// import aiaa from "public/images/aiaa.png";
 
 
 const aiaa_org = [
@@ -6,7 +6,7 @@ const aiaa_org = [
         "title": "AIAA",
         "name": "AIAA",
         "link": "AIAA",
-        "img": aiaa,
+        // "img": aiaa,
         "description": "This is AIAA from UTD",
     },
     {
