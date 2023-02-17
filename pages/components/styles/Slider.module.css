@@ -1,14 +1,17 @@
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px red solid; */
 }
-.carousel {
+.image {
+    display: inline;
+    max-height: 800px;
     height: auto;
-    width: 45vw;
 }
-.test {
-    color: red;
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+

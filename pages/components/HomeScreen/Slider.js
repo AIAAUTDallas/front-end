@@ -1,18 +1,19 @@
 import styles from "../styles/Slider.module.css";
-import { Carousel } from "react-responsive-carousel";
-
-const Slider = () => {
+import { Carousel } from "react-bootstrap";
+export default function Slider() {
     return (<>
         <div className={styles.container}>
-            <Carousel className={styles.carousel}>
-                {/* <div> */}
-                    {/* figure out how to center images within carousel */}
-                    <img style={{marginTop: '5%'}} src="background.jpg"/>
-                    <img src="AIAA_SpringKickoff_009.jpg"/>
-                {/* </div> */}
+            <Carousel controls={false} className={styles.carousel}>
+                <Carousel.Item>
+                    <img className={styles.image} src="AIAA_067_Instagram.png"/>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img className={styles.image} src="AIAA_074_Instagram.png"/>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img className={styles.image} src="AIAA_076_Instagram.png"/>
+                </Carousel.Item>
             </Carousel>
         </div>
     </>);
 }
-
-export default Slider
