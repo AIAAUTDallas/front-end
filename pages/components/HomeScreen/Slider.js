@@ -1,7 +1,6 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "../styles/Slider.module.css";
 import { Carousel } from "react-responsive-carousel";
-// import hi from "../../../public/"
+
 const Slider = () => {
     return (<>
         <div className={styles.container}>
