@@ -1,0 +1,14 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px red solid; */
+}
+.carousel {
+    height: auto;
+    width: 45vw;
+}
+.test {
+    color: red;
+}

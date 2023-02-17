@@ -3,6 +3,7 @@ import Slider from "../components/HomeScreen/Slider";
 import Org from "../components/HomeScreen/Org";
 import Partner from "../components/HomeScreen/Partner";
 import Sponsor from "../components/HomeScreen/Sponsor";
+// import Carousel from "react-responsive-carousel";
 
 const HomeScreen = () => {
     return (
