@@ -7,9 +7,9 @@ import styles from './components/styles/App.module.css'
 export default function Home() {
   return (
     <div className={styles.App}>
-      <NavBar/>
-      <HomeScreen/>
-      <Footer/>
+      <NavBar />
+      <HomeScreen />
+      <Footer />
     </div>
   );
 }
