@@ -12,6 +12,8 @@
 .header > img {
   height: 6vh;
   width: auto;
+  bottom: 2px;
+  position: relative;
   margin-right: 2vh;
   margin-left: 1vh;
   cursor: pointer;
