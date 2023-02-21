@@ -6,7 +6,7 @@ import team_member from "../Members/TeamData";
 function Team() {
     const [list, setList] = useState(team_member);
     return (
-        <div style={{ background: "BLUE" }}>
+        <div style={{ background: "blue" }}>
             <button
                 style={{
                     fontSize: "20px",
