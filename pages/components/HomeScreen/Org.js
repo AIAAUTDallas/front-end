@@ -11,7 +11,7 @@ export default function Org() {
                         <h1>American Institute of Aeronautics & Astronautics (AIAA)</h1>
                     </div>
                     <div className={styles.orgContainers}>
-                        <img className={styles.image} src="/DBF_LOGO.png"></img>
+                        <img className={styles.image} src="/DBF_Logo.png"></img>
                         <h1>Design Build Fly (DBF)</h1>
                     </div>
                 </div>
