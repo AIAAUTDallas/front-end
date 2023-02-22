@@ -19,8 +19,6 @@
   cursor: pointer;
 }
 .nav {
-    justify-content: center;
-    /* position: absolute; */
     display: flex;
     align-content: right;
     justify-content: right;

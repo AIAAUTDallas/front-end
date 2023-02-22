@@ -1,0 +1,15 @@
+.orgContainers {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* border: 2px solid red; */
+
+}
+.orgContainers > h1 {
+    font-size: 2rem;
+    width: 70%;
+} 
+.image {
+    width: 60%;
+}
