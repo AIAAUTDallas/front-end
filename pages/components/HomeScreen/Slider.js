@@ -5,7 +5,7 @@ export default function Slider() {
     return (<>
         <div className={styles.container}> 
         {/* only put pictures that are in 3:2 aspect ratio, or crop to that ratio */}
-            <Carousel interval={7000} controls={false} className={styles.carousel}>
+            <Carousel interval={6000} controls={false} className={styles.carousel}>
                 <Carousel.Item>
                     <Image width={800} height={600} className={styles.image} src="/slide1.jpg"/>
                 </Carousel.Item>
