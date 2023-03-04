@@ -1,12 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@800&display=swap');
+.header {
+  font-family: 'Chivo', sans-serif;
+  background-color: #0a2647;
+  font-size: 3vh;
+  justify-content: left;
+  text-align: left;
+  padding: 4px;
+  color: white;
+}
+.header > img {
+  height: 4vh;
+  width: auto;
+  bottom: 2px;
+  position: relative;
+  margin-right: 2vh;
+  margin-left: 1vh;
+  cursor: pointer;
+}
 .nav {
-    justify-content: center;
-    /* position: absolute; */
     display: flex;
-    align-content: center;
-    align-items: center;
+    align-content: right;
+    justify-content: right;
+    /* align-items: center; */
     width: 100%;
+    background-color: #1746a2;
 }
 
 .link {
   margin: 7px;
+  /* font-size: ; */
+  text-decoration: none;
+  color: white;
+  text-align: right;
+  margin-right: 3vh;
 }

@@ -1,19 +1,21 @@
-// import Button from 'bootstrap'
+import styles from "../styles/Org.module.css";
 
-const Org = () => {
+export default function Org() {
     return (
         <div style={{ padding: "20px" }}>
-            <div style={{ backgroundColor: "blue", padding: "20px" }}>
-                <h1>List of Orgs (LEARN ABOUT OUR BRANCHES)</h1>
-                <button>Design Build Fly</button>
-                <button>UTD Drone Racing</button>
-                <button>CAGE Workshop</button>
-                <button>Intercollegiate Rocket Engineering</button>
-                <button>Research Aerospace Design</button>
-                <button>Women of Aeronautics and Astronautics</button>
+            <div style={{display: 'flex', flexDirection: 'column', alignContent: 'center', justifyContent: 'center', fontFamily: "'chivo', 'sans-serif'"}}>
+                <h1>Aerospace Organizations</h1>
+                <div style={{display: 'flex', justifyContent: 'center', flex: '1'}}>
+                    <div className={styles.orgContainers}>
+                        <img className={styles.image} src="/AIAA_Banner.png"></img>
+                        <h1>American Institute of Aeronautics & Astronautics (AIAA)</h1>
+                    </div>
+                    <div className={styles.orgContainers}>
+                        <img className={styles.image} src="/DBF_Logo.png"></img>
+                        <h1>Design Build Fly (DBF)</h1>
+                    </div>
+                </div>
             </div>
         </div>
     )
 }
-
-export default Org

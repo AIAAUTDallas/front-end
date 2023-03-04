@@ -1,21 +1,23 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import listPlugin from "@fullcalendar/list";
 import bootstrap5Plugin from "@fullcalendar/bootstrap5";
 import interactionPlugin from "@fullcalendar/interaction";
+import { useMediaQuery } from "react-responsive";
 
 const Calendar = ({ events }) => {
-
+  const isTabletOrMobile = useMediaQuery({ query: `(max-width: 1024px)` });
+  const calendarRef = React.createRef(null);
   const [modal, setModal] = useState({
     display: false,
     eventInfo: null,
   });
 
-  const [calendarConfiguration, setCalendarConfiguration] = useState({
+  const calendarConfiguration = {
     timeZone: "UTC",
     plugins: [dayGridPlugin, listPlugin, bootstrap5Plugin, interactionPlugin],
     initialView: "dayGridMonth",
@@ -31,7 +33,7 @@ const Calendar = ({ events }) => {
     eventBackgroundColor: "#007bff",
     dayMaxEventRows: 4,
     eventClick: handleEventClick,
-  });
+  };
 
   function handleEventClick(eventInfo) {
     eventInfo.jsEvent.preventDefault();
@@ -52,8 +54,16 @@ const Calendar = ({ events }) => {
     });
   }
 
+  useEffect(() => {
+    console.log("View Changed", isTabletOrMobile);
+    const { current: calendarDom } = calendarRef;
+    const API = calendarDom ? calendarDom.getApi() : null;
+    API && API.changeView(isTabletOrMobile ? "listMonth" : "dayGridMonth");
+  }, [isTabletOrMobile]);
+
   return (
-    <div className="static">
+    <div>
+      {/* Calendar */}
       <FullCalendar
         timeZone="UTC"
         plugins={calendarConfiguration.plugins}
@@ -66,8 +76,9 @@ const Calendar = ({ events }) => {
         height={calendarConfiguration.height}
         dayMaxEventRows={calendarConfiguration.dayMaxEventRows}
         eventClick={calendarConfiguration.eventClick}
+        ref={calendarRef}
       />
-
+      
       {/* Tooltop */}
       {modal.display === true && (
         <div
@@ -94,12 +105,18 @@ const Calendar = ({ events }) => {
                   Close
                 </button>
               </div>
-              <div className="p-6 space-y-6">
-                <p className="text-base leading-relaxed text-gray-400">
-                Start: {modal.eventInfo.event.start.toString()}
+              <div className="p-6 text-left">
+                <p className="text-base leading-relaxed text-gray-300">
+                <span className="font-bold text-white mr-2">Start Time:</span>{modal.eventInfo.event.start.toString()}
                 </p>
-                <p className="text-base leading-relaxed text-gray-400">
-                End: {modal.eventInfo.event.end.toString()}
+                <p className="text-base leading-relaxed text-gray-300">
+                  <span className="font-bold text-white mr-2">End Time:</span>{modal.eventInfo.event.end.toString()}
+                </p>
+                <p className="text-base leading-relaxed text-gray-300">
+                  <span className="font-bold text-white mr-2">Sign Up Form:</span>{modal.eventInfo.event.url || "No Sign Up Form"}
+                </p>
+                <p className="text-base leading-relaxed text-gray-300">
+                  <span className="font-bold text-white mr-2">Location:</span>{modal.eventInfo.event.extendedProps.location}
                 </p>
               </div>
             </div>

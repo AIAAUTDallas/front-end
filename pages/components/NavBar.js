@@ -5,17 +5,17 @@ import styles from './styles/Nav.module.css'
 import Link from 'next/link'
 
 const NavBar = () => {
-    return (
-            <div>
+    return (<>
+        <div className={styles.header}><img href='/' src='header_logo.png'/>AIAA at UTD</div>
+        <div>
             <Nav className={styles.nav}>
-                <Link className={styles.link} href='/'><img src='AIAA_Logo.png' alt='logo' style={{ width: '50px' }} /></Link>
                 <Link className={styles.link} href='/screens/BlogScreen'>Blog</Link>
                 <Link className={styles.link} href='/screens/CalendarScreen'>Calendar</Link>
                 <Link className={styles.link} href='/screens/OrganizationScreen'>Organization</Link>
                 <Link className={styles.link} href='/screens/ContactScreen'>Contact Us</Link>
             </Nav>
         </div>
-    )
+    </>);
 }
 
 export default NavBar

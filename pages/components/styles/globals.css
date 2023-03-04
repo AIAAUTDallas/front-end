@@ -5,6 +5,10 @@
 p, h1 {
     color: white;
 }
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@800&display=swap');
+p, h1 {
+    color: white;
+}
 
 @media(max-width: 767px) {
     .fc-toolbar.fc-header-toolbar {
