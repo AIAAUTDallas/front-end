@@ -2,8 +2,10 @@ import React, {useEffect, useState} from 'react'
 import Calendar from '../components/Calendar'
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import events from "../../data/events.json"
+import styles from '../components/styles/App.module.css'
 
-const CalendarScreen = ({events}) => {
+const CalendarScreen = () => {
     // const [events, setEvents] = useState([]);
     // const [loading, setLoading] = useState(true);
     //
@@ -19,13 +21,11 @@ const CalendarScreen = ({events}) => {
     //     fetchEvents().finally(() => setLoading(false));
     // },[])
 
-
     return (
-        <div>
+        <div className={styles.App}>
             <NavBar/>
-            <div className="container-md mt-4 mb-4 bg-white p-4 rounded-2 w-100">
-                {/*{loading ? <h1 className="text-black">Loading...</h1> : <Calendar events={events}/>}*/}
-                <Calendar events={events}/>
+            <div className="container-md mt-4 mb-4 bg-white p-4 min-h-[95vh]">
+                <Calendar events={events.events}/>
             </div>
             <Footer/>
         </div>
