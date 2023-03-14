@@ -35,7 +35,7 @@ const Event = ({ eventInfo }) => {
             </div>
 
             {/* Event time and sign up form*/}
-            <div className="w-full md:w-1/3 text-center flex flex-col text-sm">
+            <div className="w-full md:w-1/3 text-center flex flex-col text-md">
                 <div className="flex flex-col gap-8 flex-1 justify-center m-2">
                     <div className="flex flex-col gap-1">
                         <p className=" m-0"><span className="font-bold">From: </span>{eventStartTime}</p>
