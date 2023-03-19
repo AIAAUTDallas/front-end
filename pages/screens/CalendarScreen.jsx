@@ -115,7 +115,7 @@ export const getStaticProps = async () => {
     props: {
       unformattedEvents: events,
     },
-    revalidate: 720, // revalidate every 2 hours (720 seconds)
+    revalidate: 1500, // 25 minutes
   };
 };
 
