@@ -17,12 +17,6 @@ const MONTHS = [
 ];
 
 const Event = ({ eventInfo }) => {
-    const { title, start, end } = eventInfo;
-
-    if (!title || !start || !end) {
-      return null;
-    }
-
     const startDate = dayjs(eventInfo.start).format('MMMM D, YYYY');
     const endDate = dayjs(eventInfo.end).format('MMMM D, YYYY');
     const eventStartTime = dayjs(eventInfo.start).format('h:mm A');
