@@ -7,7 +7,6 @@ import Event from "../../components/Calendar/Event";
 import styles from "../components/styles/App.module.css";
 const CalendarScreen = ({ unformattedEvents }) => {
   const [sectionedEvents, setSectionedEvents] = useState(null);
-  const router = useRouter();
 
   useEffect(() => {
     const filter = unformattedEvents.filter((event) => {
