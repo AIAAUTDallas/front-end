@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 import dayjs from "dayjs";
 import { useRouter } from "next/router";
 
-import Calendar from "../components/Calendar";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import Event from "../components/Calendar/Event";
+import Event from "../../components/Calendar/Event";
 import styles from "../components/styles/App.module.css";
 const CalendarScreen = ({ unformattedEvents }) => {
   const [sectionedEvents, setSectionedEvents] = useState(null);
@@ -78,7 +77,7 @@ const CalendarScreen = ({ unformattedEvents }) => {
           </div>
         </div>
 
-        {sectionedEvents && !router.isFallback ? (
+        {sectionedEvents ? (
           Object.keys(sectionedEvents).map((monthYear, index) => {
             return (
               <div
