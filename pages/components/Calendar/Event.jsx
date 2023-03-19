@@ -43,7 +43,7 @@ const Event = ({ eventInfo }) => {
                         <p className=" m-0"><span className="font-bold">At: </span>{eventInfo.extendedProps.location || "TBD"}</p>
                     </div>
                     {eventInfo.url ? (
-                        <a href={`${eventInfo.url}`} target="_blank" className="p-2 font-semibold rounded-md self-center bg-blue-600 no-underline text-white items-end" rel="noreferrer">
+                        <a href={`https://${eventInfo.url}`} target="_blank"  rel="noreferrer"className="p-2 font-semibold rounded-md self-center bg-blue-600 no-underline text-white items-end" rel="noreferrer">
                             Reservation Form
                         </a>
                     ) : (

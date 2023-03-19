@@ -35,9 +35,9 @@ const CalendarScreen = ({ unformattedEvents }) => {
   return (
     <div className={styles.App}>
       <NavBar />
-      <div className="fixed bottom-0 right-0">
+      <div className="fixed bottom-6 right-6 md:bottom-10 md:right-10 ">
         {/* up arrow */}
-        <a href="#top" className="flex justify-center">
+        <a href="#upcoming-events-title" className="flex justify-center p-2 bg-blue-500 rounded-lg text-white transform hover:scale-110">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -54,10 +54,11 @@ const CalendarScreen = ({ unformattedEvents }) => {
           </svg>
         </a>
       </div>
+
       <div className="container-md mt-4 mb-4 p-4 min-h-[95vh]">
         {/* <Calendar events={events.events}/> */}
         <div className="flex justify-between">
-          <h1 className="text-left">Upcoming Events</h1>
+          <h1 className="text-left" id="upcoming-events-title">Upcoming Events</h1>
           <div className="flex flex-row flex-wrap max-w-[400px] justify-end">
             {sectionedEvents
               ? Object.keys(sectionedEvents).map((monthYear, index) => {
