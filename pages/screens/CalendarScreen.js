@@ -6,14 +6,12 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Event from "../components/Calendar/Event";
 import styles from "../components/styles/App.module.css";
-
 const CalendarScreen = ({ unformattedEvents }) => {
   const [sectionedEvents, setSectionedEvents] = useState(null);
-  const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
     const filter = unformattedEvents.filter((event) => {
-      return dayjs(event.start).isAfter(dayjs());
+      return event?.start && event?.end && dayjs(event.start).isAfter(dayjs());
     });
 
     const sorted = filter.sort((a, b) => {
@@ -37,27 +35,54 @@ const CalendarScreen = ({ unformattedEvents }) => {
   return (
     <div className={styles.App}>
       <NavBar />
+      <div className="fixed bottom-0 right-0">
+        {/* up arrow */}
+        <a href="#top" className="flex justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 10l7-7m0 0l7 7m-7-7v18"
+            />
+          </svg>
+        </a>
+      </div>
       <div className="container-md mt-4 mb-4 p-4 min-h-[95vh]">
         {/* <Calendar events={events.events}/> */}
         <div className="flex justify-between">
           <h1 className="text-left">Upcoming Events</h1>
-          <div className="flex flex-row flex-wrap max-w-[400px]">
-            {sectionedEvents ? (
-              Object.keys(sectionedEvents).map((monthYear, index) => {
-                return (
-                  <a key={index} href={`#${monthYear}`} className="self-center text-sm p-2">{monthYear}</a>
-                );
-              })
-            ) : (
-              ""
-            )}
+          <div className="flex flex-row flex-wrap max-w-[400px] justify-end">
+            {sectionedEvents
+              ? Object.keys(sectionedEvents).map((monthYear, index) => {
+                  return (
+                    <a
+                      key={index}
+                      href={`#${monthYear}`}
+                      className="self-center text-sm p-2"
+                    >
+                      {monthYear}
+                    </a>
+                  );
+                })
+              : ""}
           </div>
         </div>
 
         {sectionedEvents ? (
           Object.keys(sectionedEvents).map((monthYear, index) => {
             return (
-              <div id={monthYear} key={monthYear} className="flex justify-center row pt-4">
+              <div
+                id={monthYear}
+                key={monthYear}
+                className="flex justify-center row pt-4"
+              >
                 <div className="text-left max-h-[100px] mb-4">
                   <h1 className="text-2xl font-bold">{monthYear}</h1>
                 </div>
