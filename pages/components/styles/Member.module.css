@@ -38,10 +38,10 @@
 @media (max-width:1020px) {
     .cards{
         flex-direction: column;
+        display: block;
     }
     .card{
         margin: 20px;
-        height: 100vh;
     }
     
 }
