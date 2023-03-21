@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import MemberCard from "../Members/MemberCard";
-import team_member from "../TeamData";
+import MemberCard from "./MemberCard";
+import team_member from "../HomeScreen/TeamData";
 import style from "../../styles/Member.module.css";
 
 function Team() {

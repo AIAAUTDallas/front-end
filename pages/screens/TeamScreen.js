@@ -1,5 +1,5 @@
 import React from 'react'
-import Team from 'pages/components/HomeScreen/Members/Team';
+import Team from 'pages/components/Members/Team';
 
 const TeamScreen = () => {
     return (
