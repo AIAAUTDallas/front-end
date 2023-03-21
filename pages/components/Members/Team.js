@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MemberCard from "./MemberCard";
-import team_member from "../HomeScreen/TeamData";
-import style from "../../styles/Member.module.css";
+import team_member from "../../../components/Team/TeamData";
+import style from "../styles/Member.module.css";
 
 function Team() {
   const [list, setList] = useState(team_member);
