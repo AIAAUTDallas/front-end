@@ -1,5 +1,5 @@
 import React from 'react'
-import Team from 'src/components/Team/Team';
+import Team from '@/components/Team/Team';
 
 const Index = () => {
     return (

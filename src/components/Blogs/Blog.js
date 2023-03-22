@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import BlogCard from "./BlogCard.jsx";
+import BlogCard from "./BlogCard.js";
 // import { aiaa_org } from "../Organizations/OrgData";
 import Link from 'next/link';
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import AIAA from './AIAA.jsx';
 import EEIE from './EEIE.jsx';
-import OrgCard from "./OrgCard.jsx";
+import OrgCard from "./OrgCard.js";
 // import { aiaa_org } from "./OrgData.js";
 
 
