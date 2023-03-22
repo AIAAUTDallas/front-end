@@ -73,7 +73,7 @@ const Index = ({ unformattedEvents }) => {
           </div>
         </div>
 
-        {Object.keys(sectionedEvents).length === 0 ? (
+        {JSON.stringify(sectionedEvents) === "{}" ? (
             <div className="text-center mt-8 p-8 bg-gray-800 rounded-lg">
               <h1>No upcoming events</h1>
               <p>Check back later for more</p>
