@@ -13,6 +13,7 @@ const NavBar = () => {
                 <Link className={styles.link} href='/screens/CalendarScreen'>Calendar</Link>
                 <Link className={styles.link} href='/screens/OrganizationScreen'>Organization</Link>
                 <Link className={styles.link} href='/screens/ContactScreen'>Contact Us</Link>
+                <Link className={styles.link} href='/screens/TeamScreen'>Team</Link>
             </Nav>
         </div>
     </>);

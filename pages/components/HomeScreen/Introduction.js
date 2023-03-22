@@ -1,4 +1,7 @@
-import React from 'react'
+import React from "react";
+import { Row, Col, Container, Button } from "react-bootstrap";
+import Link from 'next/link'
+import styles from '../styles/Nav.module.css'
 
 const Introduction = () => {
     return (
@@ -10,5 +13,3 @@ const Introduction = () => {
         </div>
     )
 }
-
-export default Introduction

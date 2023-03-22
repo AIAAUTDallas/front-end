@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 
 const Contact = () => {
     return (
-        <div>
-            <h1>Contact Us</h1>
+        <div >
+            <h1  class="text-3xl font-bold underline">Contact Us</h1>
             <div>
                 <h3>3000 Waterview Parkway Richardson, TX</h3>
                 <h3>aiaautdallas@gmail.com</h3>

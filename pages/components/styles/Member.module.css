@@ -1,0 +1,47 @@
+.team{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+}
+
+.topImg{
+    border-radius: 10px;
+}
+.cardBody{
+    margin: 50px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+	justify-content: space-between;
+    background-color: black;
+}
+
+.card{
+    width: 100%;
+    margin: 25px; 
+    width: 400px;
+    min-height: 600px;
+    background-color: transparent;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 13px 40px -5px hsla(240, 1%, 36%, 0.12),
+      0 8px 32px -8px hsla(0, 7%, 44%, 0.14),
+      0 -6px 32px -6px hsla(0, 8%, 83%, 0.02);
+}
+
+@media (max-width:1020px) {
+    .cards{
+        flex-direction: column;
+        display: block;
+    }
+    .card{
+        margin: 20px;
+    }
+    
+}
