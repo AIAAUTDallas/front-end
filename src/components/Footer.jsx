@@ -3,9 +3,9 @@ import '../styles/Footer.module.css'
 
 const Footer = () => {
     return (
-        <div style={{ backgroundColor: "rgb(52, 58, 64)", paddingBottom: "30px"}}>
+        <div className="bg-[#333333] pb-[30px]">
             <div className='footer'>
-                <img src='AIAA_Logo.png' alt='logo' style={{ width: "50px" }} />
+                <img src='AIAA_Logo.png' className="w-[50px]" alt='logo' />
             </div>
             <p>
                 © 2022, AIAA UTD.
