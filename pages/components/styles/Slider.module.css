@@ -3,6 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 98vw;
+    overflow: hidden;
     /* border: 1px red solid; */
     height: clamp(40%, 30vh + 20rem, 40vh);
 }
@@ -13,7 +15,6 @@
     height: auto;
 }
 .container {
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
