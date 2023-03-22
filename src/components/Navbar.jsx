@@ -1,8 +1,8 @@
-import React from 'react'
-import Nav from 'react-bootstrap/Nav'
+import React from 'react';
+import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from '../styles/Nav.module.css'
-import Link from 'next/link'
+import styles from '../styles/Nav.module.css';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
