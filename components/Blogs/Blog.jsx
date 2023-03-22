@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import BlogCard from "./BlogCard.js";
-// import { aiaa_org } from "../Orgs/OrgData";
+import BlogCard from "./BlogCard.jsx";
+// import { aiaa_org } from "../Organizations/OrgData";
 import Link from 'next/link';
 
 const Blog = () => {

@@ -1,15 +1,14 @@
 import React from 'react'
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import HomeScreen from './screens/HomeScreen';
-import styles from './components/styles/App.module.css'
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import HomeScreen from '../components/Home/HomeScreen';
+import styles from '../styles/App.module.css'
+import Layout from "../components/Layout";
 
 export default function Home() {
   return (
     <div className={styles.App}>
-      <NavBar />
-      <HomeScreen />
-      <Footer />
+        <HomeScreen />
     </div>
   );
 }

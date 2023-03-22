@@ -1,9 +1,9 @@
 import React from 'react'
-import './styles/Footer.module.css'
+import '../styles/Footer.module.css'
 
 const Footer = () => {
     return (
-        <div style={{ backgroundColor: "rgb(52, 58, 64)", }}>
+        <div style={{ backgroundColor: "rgb(52, 58, 64)", paddingBottom: "30px"}}>
             <div className='footer'>
                 <img src='AIAA_Logo.png' alt='logo' style={{ width: "50px" }} />
             </div>
@@ -17,4 +17,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Nav from 'react-bootstrap/Nav'
-import OrgCard from "./OrgCard.js";
+import OrgCard from "./OrgCard.jsx";
 // import { aiaa_org } from "./OrgData.js";
 
 const Organization = () => {

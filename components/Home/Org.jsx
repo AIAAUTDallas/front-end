@@ -1,4 +1,4 @@
-import styles from "../styles/Org.module.css";
+import styles from "../../styles/Org.module.css";
 
 export default function Org() {
     return (

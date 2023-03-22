@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import dayjs from "dayjs";
 
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+
 import Event from "../../components/Calendar/Event";
-import styles from "../components/styles/App.module.css";
-const CalendarScreen = ({ unformattedEvents }) => {
+import styles from "../../styles/App.module.css";
+const Index = ({ unformattedEvents }) => {
   const [sectionedEvents, setSectionedEvents] = useState(null);
 
   useEffect(() => {
@@ -33,10 +32,9 @@ const CalendarScreen = ({ unformattedEvents }) => {
 
   return (
     <div className={styles.App}>
-      <NavBar />
       <div className="fixed bottom-6 right-6 md:bottom-10 md:right-10 ">
         {/* up arrow */}
-        <a href="#upcoming-events-title" className="flex justify-center p-2 bg-blue-500 rounded-lg text-white transform hover:scale-110">
+        <a href="screens#upcoming-events-title" className="flex justify-center p-2 bg-blue-500 rounded-lg text-white transform hover:scale-110">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -54,7 +52,7 @@ const CalendarScreen = ({ unformattedEvents }) => {
         </a>
       </div>
 
-      <div className="container-md mt-4 mb-4 p-4 min-h-[95vh]">
+      <div className="container-md p-4 min-h-[95vh]">
         {/* <Calendar events={events.events}/> */}
         <div className="flex justify-between">
           <h1 className="text-left" id="upcoming-events-title">Upcoming Events</h1>
@@ -74,6 +72,13 @@ const CalendarScreen = ({ unformattedEvents }) => {
               : ""}
           </div>
         </div>
+
+        {Object.keys(sectionedEvents).length === 0 ? (
+            <div className="text-center mt-8 p-8 bg-gray-800 rounded-lg">
+              <h1>No upcoming events</h1>
+              <p>Check back later for more</p>
+            </div>
+        ) : ""}
 
         {sectionedEvents ? (
           Object.keys(sectionedEvents).map((monthYear, index) => {
@@ -96,7 +101,6 @@ const CalendarScreen = ({ unformattedEvents }) => {
           <h1>loading...</h1>
         )}
       </div>
-      <Footer />
     </div>
   );
 };
@@ -119,4 +123,4 @@ export const getStaticProps = async () => {
   };
 };
 
-export default CalendarScreen;
+export default Index;

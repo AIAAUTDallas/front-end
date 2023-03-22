@@ -1,7 +1,7 @@
 import React from 'react';
 import Card  from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import style from '../styles/Member.module.css';
+import style from '../../styles/Member.module.css';
 // import Aadi from '/Aadi_edited.jpg';
 // import { Modal } from 'react-bootstrap';
 

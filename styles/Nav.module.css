@@ -9,6 +9,11 @@
   padding: 4px;
   color: white;
 }
+
+.header:hover{
+    cursor: pointer;
+}
+
 .header > img {
   height: 4vh;
   width: auto;
