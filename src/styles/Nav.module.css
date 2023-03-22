@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@800&display=swap');
 .header {
   font-family: 'Chivo', sans-serif;
@@ -25,7 +24,7 @@
 }
 .nav {
     display: flex;
-    align-content: right;
+    align-content: end;
     justify-content: right;
     /* align-items: center; */
     width: 100%;
