@@ -13,19 +13,19 @@ export default function Slider() {
         <div className={styles.container}>
             <Carousel interval={6000} controls={false}>
                 <Carousel.Item>
-                    <Image priority={true} className="object-cover h-[300px] md:h-[600px]" src={slider1} alt={"AIAA general meeting with a people sitting looking towards the front"}/>
+                    <Image priority={true} placeholder={"blur"} className="object-cover h-[300px] md:h-[600px]" src={slider1} alt={"AIAA general meeting with a people sitting looking towards the front"}/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Image className="object-cover h-[300px] md:h-[600px]" src={slider2} alt={"AIAA president giving an introduction in the general meeting"}/>
+                    <Image priority={true} placeholder={"blur"} className="object-cover h-[300px] md:h-[600px]" src={slider2} alt={"AIAA president giving an introduction in the general meeting"}/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Image className="object-cover h-[300px] md:h-[600px]" src={slider3} alt={"AIAA general meeting guest sitting in room"}/>
+                    <Image priority={true} placeholder={"blur"} className="object-cover h-[300px] md:h-[600px]" src={slider3} alt={"AIAA general meeting guest sitting in room"}/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Image className="object-cover h-[300px] md:h-[600px]" src={slider4} alt={"AIAA president talking about the organization to a people"}/>
+                    <Image placeholder={"blur"} className="object-cover h-[300px] md:h-[600px]" src={slider4} alt={"AIAA president talking about the organization to a people"}/>
                 </Carousel.Item >
                 <Carousel.Item>
-                    <Image className="object-cover h-[300px] md:h-[600px]" src={slider5} alt={"AIAA officer and members having a laugh"} />
+                    <Image placeholder={"blur"} className="object-cover h-[300px] md:h-[600px]" src={slider5} alt={"AIAA officer and members having a laugh"} />
                 </Carousel.Item>
             </Carousel>
         </div>
