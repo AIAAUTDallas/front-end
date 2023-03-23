@@ -13,7 +13,7 @@ export default function Slider() {
         <div className={styles.container}>
             <Carousel interval={6000} controls={false}>
                 <Carousel.Item>
-                    <Image className="object-cover h-[300px] md:h-[600px]" src={slider1} alt={"AIAA general meeting with a people sitting looking towards the front"}/>
+                    <Image priority={true} className="object-cover h-[300px] md:h-[600px]" src={slider1} alt={"AIAA general meeting with a people sitting looking towards the front"}/>
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image className="object-cover h-[300px] md:h-[600px]" src={slider2} alt={"AIAA president giving an introduction in the general meeting"}/>

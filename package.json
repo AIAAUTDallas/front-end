@@ -8,16 +8,15 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "dependencies":{
-    "tailwindcss": "3.2.7",
-    "@headlessui/react": "^1.7.13",
-    "@heroicons/react": "^2.0.16",
+  "dependencies": {
     "@fullcalendar/bootstrap5": "^6.1.4",
     "@fullcalendar/core": "^6.1.4",
     "@fullcalendar/daygrid": "^6.1.4",
     "@fullcalendar/interaction": "^6.1.4",
     "@fullcalendar/list": "^6.1.4",
     "@fullcalendar/react": "^6.1.4",
+    "@headlessui/react": "^1.7.13",
+    "@heroicons/react": "^2.0.16",
     "@next/font": "13.1.6",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
@@ -29,12 +28,8 @@
     "react-bootstrap": "^2.7.2",
     "react-dom": "18.2.0",
     "react-responsive": "^9.0.2",
-    "sharp": "^0.31.3"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7"
+    "sharp": "^0.31.3",
+    "tailwindcss": "3.2.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
