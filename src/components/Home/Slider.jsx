@@ -22,10 +22,10 @@ export default function Slider() {
                     <Image priority={true} placeholder={"blur"} className="object-cover h-[300px] md:h-[600px]" src={slider3} alt={"AIAA general meeting guest sitting in room"}/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Image placeholder={"blur"} className="object-cover h-[300px] md:h-[600px]" src={slider4} alt={"AIAA president talking about the organization to a people"}/>
+                    <Image priority={true} placeholder={"blur"} className="object-cover h-[300px] md:h-[600px]" src={slider4} alt={"AIAA president talking about the organization to a people"}/>
                 </Carousel.Item >
                 <Carousel.Item>
-                    <Image placeholder={"blur"} className="object-cover h-[300px] md:h-[600px]" src={slider5} alt={"AIAA officer and members having a laugh"} />
+                    <Image priority={true} placeholder={"blur"} className="object-cover h-[300px] md:h-[600px]" src={slider5} alt={"AIAA officer and members having a laugh"} />
                 </Carousel.Item>
             </Carousel>
         </div>
