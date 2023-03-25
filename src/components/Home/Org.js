@@ -5,7 +5,7 @@ export default function Org() {
         <div style={{ padding: "20px" }}>
             <div style={{display: 'flex', flexDirection: 'column', alignContent: 'center', justifyContent: 'center', fontFamily: "'chivo', 'sans-serif',",}}>
                 <h1>Projects</h1>
-                <div style={{display: 'flex', justifyContent: 'space-around'}}>
+                <div style={{display: 'flex', paddingTop: '2rem', justifyContent: 'space-around'}}>
                     <div className={styles.orgContainers}>
                         <img className={styles.image} src="/projects/DARRT_Logo_V2.PNG"></img>
                         <h1>Drone Applications Research And Racing Team (DARRT)</h1>

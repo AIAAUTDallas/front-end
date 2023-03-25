@@ -10,15 +10,15 @@ const Navbar = () => {
     return (<>
         <div className={styles.header}  onClick={() => {push("/")}}>
             <img src='header_logo.png'/>
-            AIAA at UTD
+            AIAA UTD
         </div>
         <div>
             <Nav className={styles.nav}>
-                <Link className={styles.link} href='/blogs'>Blog</Link>
+                <Link className={styles.link} href='/blogs'>Newsletter</Link>
                 <Link className={styles.link} href='/calendar'>Calendar</Link>
-                <Link className={styles.link} href='/organizations'>Organization</Link>
-                <Link className={styles.link} href='/contact-us'>Contact Us</Link>
                 <Link className={styles.link} href='/team'>Team</Link>
+                {/* <Link className={styles.link} href='/organizations'>Organization</Link> i don't think we're doing anything with this page */}
+                <Link className={styles.link} href='/contact-us'>Contact Us</Link>
             </Nav>
         </div>
     </>);

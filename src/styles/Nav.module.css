@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@800&display=swap');
 
 .header {
+  display: flex;
   font-family: 'Chivo', sans-serif;
-    font-weight: 800; /* specify the font weight */
+  font-weight: 800; /* specify the font weight */
   background-color: #0a2647;
   font-size: 3vh;
   justify-content: left;
+  align-items: center;
   text-align: left;
   padding: 4px;
   color: white;
