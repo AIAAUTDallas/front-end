@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className="bg-[#333333] pb-[30px]">
             <div className='footer'>
-                <img src='AIAA_Logo.png' className="w-[50px]" alt='logo' />
+                <img src='/AIAA_Logo.png' className="w-[50px]" alt='logo' />
             </div>
             <p>
                 © 2022, AIAA UTD.
