@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
         <div>
             <Nav className={styles.nav}>
-                <Link className={styles.link} href='/blogs'>Newsletter</Link>
+                <Link className={styles.link} href='/newsletter'>Newsletter</Link>
                 <Link className={styles.link} href='/calendar'>Calendar</Link>
                 <Link className={styles.link} href='/team'>Team</Link>
                 {/* <Link className={styles.link} href='/organizations'>Organization</Link> i don't think we're doing anything with this page */}
