@@ -22,9 +22,9 @@ const components = {
 
 const Index = () => {
     return (
-        <NewsLetter title="Newsletter" description="Subscribe to our newsletter to get the latest news and updates.">
+        <NewsLetter title="Newsletter" subtitle="Subscribe to our newsletter to get the latest news and updates.">
             <div className="my-8 flex flex-row flex-wrap justify-center gap-12">
-                {data.map((item, index) => {
+                {data.sort((a,b) => {a.date - b.date}).map((item, index) => {
                     return (
                         <NewsletterCard key={index} {...item} />
                     )

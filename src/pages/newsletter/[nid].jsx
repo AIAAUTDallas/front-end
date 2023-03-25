@@ -9,6 +9,8 @@ import ParagraphOnly from '@/components/Blogs/templates/ParagraphOnly';
 import List from '@/components/Blogs/templates/List';
 import NewsletterCard from '@/components/Blogs/NewsletterCard';
 
+import Link from 'next/link'
+
 import { useRouter } from 'next/router'
 import data from "../../data/newsletter.json"
 
@@ -37,7 +39,7 @@ export default function Newsletter() {
     }, [router.isReady, nid])
 
     return (
-        <NewsLetter>
+        <NewsLetter title={newsletter?.title} subtitle={newsletter?.subtitle} backgroundImage={newsletter?.backgroundImage}>
             {loading && (
                 <div className="flex flex-col items-center justify-center w-full h-full bg-slate-900">
                     <h1>Loading...</h1>
@@ -46,12 +48,11 @@ export default function Newsletter() {
 
             {!loading && !newsletter && (
                 <Section>
-                    {/* light blue info box */}
-                    <h1 className="text-2xl text-white">We're are sorry, the newsletter you are looking was not found.</h1>
+                    <h1 className="text-2xl text-white">We are sorry, the newsletter you are looking was not found.</h1>
                     <h2 className="text-2xl text-white font-bold text-center">Here are some of our latest newsletters:</h2>
                     <div className="my-8 flex flex-row flex-wrap justify-center gap-12">
 
-                        {data.map((item, index) => {
+                        {data.sort((a, b) => {a.date - b.date}).map((item, index) => {
                             if (index > 2) return null;
 
                             return (
@@ -60,7 +61,7 @@ export default function Newsletter() {
                         })}
 
                     </div>
-                    <a href="/newsletter" className="no-underline w-[200px] text-white bg-blue-600 p-2 self-center rounded-lg mt-8" >View all newsletters</a>
+                    <Link href="/newsletter" className="no-underline w-[200px] text-white bg-blue-600 p-2 self-center rounded-lg mt-8" >View all newsletters</Link>
                 </Section>
             )}
 

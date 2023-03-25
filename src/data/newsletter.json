@@ -3,6 +3,8 @@
     "id": "1",
     "title": "Mega Event",
     "subtitle": "Totally Awesome",
+    "backgroundImage": "https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif",
+    "date": "2023-01-01",
     "sections": [
       {
         "title": "Section 1",
@@ -43,6 +45,8 @@
     "id": "2",
     "title": "Mega Event",
     "subtitle": "Totally Awesome",
+    "backgroundImage": "",
+    "date": "2023-02-01",
     "sections": [
       {
         "title": "Section 1",
