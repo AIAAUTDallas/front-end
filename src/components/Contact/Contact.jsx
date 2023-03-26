@@ -5,9 +5,9 @@ const Contact = () => {
   return (
     <section class="bg-slate-900 dark:bg-gray-900">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+      <h1 class="text-3xl font-bold text-center">
           Contact Us
-        </h2>
+        </h1>
         <h3 class="font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
           3000 Waterview Parkway Richardson, TX
         </h3>

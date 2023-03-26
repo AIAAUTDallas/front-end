@@ -1,53 +1,91 @@
 import React from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
-import Nav from 'react-bootstrap/Nav';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from '../styles/Nav.module.css';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import Nav from "react-bootstrap/Nav";
+import "bootstrap/dist/css/bootstrap.min.css";
+import styles from "../styles/Nav.module.css";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
   return (
-    <div className="bg-[#333333] table-footer-group">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-        <div className="p-4">
-          <div className="flex">
-          <img src="AIAA_Logo.png" alt="logo" className="h-5 w-5 mr-2"/>
-          <h2 className="text-sm text-white">THE AMERICAN INSTITUTE OF AERONAUTICS AND ASTRONAUTICS AT UTD</h2>
+    <div className="bg-[#333333] py-4">
+      <div className="container mx-auto flex justify-between text-gray-400">
+        <div className="flex flex-col">
+          <div className="flex m-auto">
+            <img src="AIAA_Logo.png" alt="logo" className="h-5 w-5" />
+            <h2 className="text-sm text-white text-lg font-serif, font-family: Chivo,
+  font-extrabold ">AIAA UTD</h2>
           </div>
-          <p>Aggressively Pursuing Aerospace Opportunity</p>
-          <p>© 2022, AIAA UTD.</p>
-          <a href="https://www.instagram.com/aiaa_utd/">
-            <svg
-              className="h-5 w-5 text-teal-900"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="white"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              {" "}
-              <path stroke="none" d="M0 0h24v24H0z" />{" "}
-              <rect x="4" y="4" width="16" height="16" rx="4" />{" "}
-              <circle cx="12" cy="12" r="3" />{" "}
-              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-            </svg>
-          </a>
-          <p className="text-xs">
-            This website is not an official publication of UT Dallas and does
-            not represent the views of the university or its officers. The
-            University of Texas at Dallas is an Equal Opportunity/Affirmative
-            Action University. Students with disabilities needing special
-            assistance to attend events please call (972‑883‑2946). Texas Relay
-            Operation: 1‑800‑RELAYTX.
+          <p className="text-center">
+            Aggressively Pursuing Aerospace Opportunity
           </p>
+          <p className="text-center">© 2022, AIAA UTD.</p>
         </div>
 
-        <div className="p-4">
-          <Nav>
+        <div className="flex flex-col">
+          <div className="flex">
+            <a href="https://www.instagram.com/aiaa_utd/">
+              <svg
+                class="h-5 w-12 text-teal-900"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="white"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                {" "}
+                <path stroke="none" d="M0 0h24v24H0z" />{" "}
+                <rect x="4" y="4" width="16" height="16" rx="4" />{" "}
+                <circle cx="12" cy="12" r="3" />{" "}
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/aiaa_utd/">
+              <svg
+                class="h-5 w-12 text-teal-900"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="white"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                {" "}
+                <path stroke="none" d="M0 0h24v24H0z" />{" "}
+                <rect x="4" y="4" width="16" height="16" rx="4" />{" "}
+                <circle cx="12" cy="12" r="3" />{" "}
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/aiaa_utd/">
+              <svg
+                class="h-5 w-12 text-teal-900"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="white"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                {" "}
+                <path stroke="none" d="M0 0h24v24H0z" />{" "}
+                <rect x="4" y="4" width="16" height="16" rx="4" />{" "}
+                <circle cx="12" cy="12" r="3" />{" "}
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+            </a>
+            </div>
+        </div>
+
+        <div className="flex flex-col">
+          <Nav className="flex justify-center">
             <Link className={styles.link} href="/">
               Home
             </Link>
@@ -68,6 +106,16 @@ const Footer = () => {
             </Link>
           </Nav>
         </div>
+      </div>
+      <div className="bg-[#333333] flex flex-row p-5 pb-0 text-center ">
+        <p className="text-xs mx-auto flex justify-between text-white-400 ">
+          This website is not an official publication of UT Dallas and does not
+          represent the views of the university or its officers. The University
+          of Texas at Dallas is an Equal Opportunity/Affirmative Action
+          University. Students with disabilities needing special assistance to
+          attend events please call (972‑883‑2946). Texas Relay Operation:
+          1‑800‑RELAYTX.
+        </p>
       </div>
     </div>
   );
