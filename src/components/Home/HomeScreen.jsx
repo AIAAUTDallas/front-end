@@ -1,6 +1,6 @@
 import Introduction from "./Introduction";
 import Slider from "./Slider";
-import Org from "./Org";
+import Project from "./Project";
 import Partner from "./Partner";
 import Sponsor from "./Sponsor";
 
@@ -9,7 +9,7 @@ const HomeScreen = () => {
         <div>
             <Slider />
             <Introduction />
-            <Org />
+            <Project />
             <Sponsor />
             <Partner />
         </div>
