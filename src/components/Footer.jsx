@@ -19,15 +19,15 @@ const Footer = () => {
           <p>© 2022, AIAA UTD.</p>
           <a href="https://www.instagram.com/aiaa_utd/">
             <svg
-              class="h-5 w-5 text-teal-900"
+              className="h-5 w-5 text-teal-900"
               width="24"
               height="24"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              strokeWidth="2"
               stroke="white"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               {" "}
               <path stroke="none" d="M0 0h24v24H0z" />{" "}
