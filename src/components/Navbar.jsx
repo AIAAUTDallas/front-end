@@ -4,12 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../styles/Nav.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import header_logo from '../../public/header_logo.png';
 
 const Navbar = () => {
     const { push } = useRouter();
     return (<>
-        <div className={styles.header}  onClick={() => {push("/")}}>
-            <img src='header_logo.png'/>
+        <div className={styles.header} onClick={() => { push("/") }}>
+            <img src="/header_logo.png" alt="header logo" />
             AIAA UTD
         </div>
         <div>

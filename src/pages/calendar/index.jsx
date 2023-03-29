@@ -34,7 +34,7 @@ const Index = ({ unformattedEvents }) => {
     <div className={styles.App}>
       <div className="fixed bottom-6 right-6 md:bottom-10 md:right-10 ">
         {/* up arrow */}
-        <a href="screens#upcoming-events-title" className="flex justify-center p-2 bg-blue-500 rounded-lg text-white transform hover:scale-110">
+        <a href="#upcoming-events-title" className="flex justify-center p-2 bg-blue-500 rounded-lg text-white transform hover:scale-110">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"

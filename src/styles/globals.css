@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-p, h1 {
+h1 {
     color: white;
     font-family: 'Chivo', sans-serif;
     font-weight: 800 !important; /* specify the font weight */
+}
+
+p {
+  color: white;
 }
 
 @media(max-width: 767px) {

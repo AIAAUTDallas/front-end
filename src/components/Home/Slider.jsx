@@ -11,7 +11,7 @@ import slider5 from "../../../public/slide5.jpg";
 export default function Slider() {
     return (<>
         <div className={styles.container}>
-            <Carousel interval={6000} controls={false} className="brightness-75">
+            <Carousel interval={6000} controls={false} className="brightness-50">
                 <Carousel.Item>
                     <Image priority={true} placeholder={"blur"} className="object-cover h-[300px] md:h-[600px]" src={slider1} alt={"AIAA general meeting with a people sitting looking towards the front"}/>
                 </Carousel.Item>
@@ -28,9 +28,9 @@ export default function Slider() {
                     <Image priority={true} placeholder={"blur"} className="object-cover h-[300px] md:h-[600px]" src={slider5} alt={"AIAA officer and members having a laugh"} />
                 </Carousel.Item>
             </Carousel>
-            <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 font-chivo italic text-3xl">
+            <h1 className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 font-chivo italic text-3xl">
                 THE AMERICAN INSTITUTE OF AEROSPACE AND ASTRONAUTICS AT UTD
-            </div>
+            </h1>
         </div>
     </>);
 }
