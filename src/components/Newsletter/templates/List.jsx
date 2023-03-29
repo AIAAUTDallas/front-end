@@ -19,7 +19,7 @@ export default function List({ list, format }) {
                 <ol className="list-outside list-decimal flex flex-col gap-3">
                     {list.map((item, index) => {
                         return (
-                            <li className="text-white text-lg font-bold" key={index}>
+                            <li className="text-white text-lg" key={index}>
                                 {item}
                             </li>
                         )

@@ -14,7 +14,7 @@ const NewsletterCard = ({id, title, subtitle, date, backgroundImage}) => {
             backgroundRepeat: "no-repeat",
             backgroundBlendMode: "darken",
         }} 
-        className="bg-gray-800 bg-opacity-50 p-24 hover:cursor-pointer hover:scale-110" onClick={() => {router.push(`/newsletter/${id}`)}}>
+        className="bg-gray-800/50 p-24 hover:cursor-pointer hover:scale-110" onClick={() => {router.push(`/newsletter/${id}`)}}>
             <div className="flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center justify-center">
                     <h1 className="text-2xl text-white font-bold text-center">

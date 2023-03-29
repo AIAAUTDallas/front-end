@@ -9,7 +9,7 @@ export default function Newsletter({ title, subtitle, backgroundImage, children 
                 backgroundRepeat: "no-repeat",
                 backgroundBlendMode: "darken",
             }}  
-            className="p-12 w-full bg-gray-800 bg-opacity-50">
+            className="p-12 w-full bg-gray-800/50">
                 <h1 className="text-3xl font-bold text-center">{title}</h1>
                 <p className="text-center">{subtitle}</p>
             </div>

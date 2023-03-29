@@ -1,13 +1,13 @@
 import React from 'react'
-import NewsLetter from "@/components/Blogs/templates/Newsletter";
-import Section from "@/components/Blogs/templates/Section";
-import TwoColumn from '@/components/Blogs/templates/TwoColumn';
-import TwoRow from '@/components/Blogs/templates/TwoRow';
-import Image from '@/components/Blogs/templates/Image';
-import Paragraph from '@/components/Blogs/templates/Paragraph';
-import ParagraphOnly from '@/components/Blogs/templates/ParagraphOnly';
-import List from '@/components/Blogs/templates/List';
-import NewsletterCard from '@/components/Blogs/NewsletterCard';
+import NewsLetter from "@/components/Newsletter/templates/Newsletter";
+import Section from "@/components/Newsletter/templates/Section";
+import TwoColumn from '@/components/Newsletter/templates/TwoColumn';
+import TwoRow from '@/components/Newsletter/templates/TwoRow';
+import Image from '@/components/Newsletter/templates/Image';
+import Paragraph from '@/components/Newsletter/templates/Paragraph';
+import ParagraphOnly from '@/components/Newsletter/templates/ParagraphOnly';
+import List from '@/components/Newsletter/templates/List';
+import NewsletterCard from '@/components/Newsletter/NewsletterCard';
 
 import data from "../../data/newsletter.json"
 

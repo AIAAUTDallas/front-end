@@ -8,11 +8,12 @@ import { useRouter } from "next/navigation";
 
 const Footer = () => {
   return (
-    <div className="bg-[#333333] py-4">
-      <div className="container mx-auto flex justify-between text-gray-400">
-        <div className="flex flex-col">
+    <>
+    <div className="bg-[#1746a2] py-4">
+      <div className="container mx-auto flex flex-wrap justify-center md:justify-between text-gray-400">
+        <div className="flex flex-col w-full py-2 md:py-4 md:w-1/3">
           <div className="flex m-auto">
-            <img src="AIAA_Logo.png" alt="logo" className="h-5 w-5" />
+            <img src="./AIAA_Logo.png" alt="logo" className="h-5 w-5" />
             <h2 className="text-sm text-white text-lg font-serif, font-family: Chivo,
   font-extrabold ">AIAA UTD</h2>
           </div>
@@ -22,19 +23,19 @@ const Footer = () => {
           <p className="text-center">© 2022, AIAA UTD.</p>
         </div>
 
-        <div className="flex flex-col">
-          <div className="flex">
+        <div className="flex flex-col justify-center py-2 md:py-4 w-full md:w-1/3">
+          <div className="flex justify-center">
             <a href="https://www.instagram.com/aiaa_utd/">
               <svg
-                class="h-5 w-12 text-teal-900"
+                className="h-5 w-12 text-teal-900"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                stroke-width="2"
+                strokeWidth="2"
                 stroke="white"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 {" "}
                 <path stroke="none" d="M0 0h24v24H0z" />{" "}
@@ -45,15 +46,15 @@ const Footer = () => {
             </a>
             <a href="https://www.instagram.com/aiaa_utd/">
               <svg
-                class="h-5 w-12 text-teal-900"
+                className="h-5 w-12 text-teal-900"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                stroke-width="2"
+                strokeWidth="2"
                 stroke="white"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 {" "}
                 <path stroke="none" d="M0 0h24v24H0z" />{" "}
@@ -64,15 +65,15 @@ const Footer = () => {
             </a>
             <a href="https://www.instagram.com/aiaa_utd/">
               <svg
-                class="h-5 w-12 text-teal-900"
+                className="h-5 w-12 text-teal-900"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                stroke-width="2"
+                strokeWidth="2"
                 stroke="white"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 {" "}
                 <path stroke="none" d="M0 0h24v24H0z" />{" "}
@@ -84,7 +85,7 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full py-2 md:py-4 md:w-1/3">
           <Nav className="flex justify-center">
             <Link className={styles.link} href="/">
               Home
@@ -107,17 +108,18 @@ const Footer = () => {
           </Nav>
         </div>
       </div>
-      <div className="bg-[#333333] flex flex-row p-5 pb-0 text-center ">
-        <p className="text-xs mx-auto flex justify-between text-white-400 ">
-          This website is not an official publication of UT Dallas and does not
-          represent the views of the university or its officers. The University
-          of Texas at Dallas is an Equal Opportunity/Affirmative Action
-          University. Students with disabilities needing special assistance to
-          attend events please call (972‑883‑2946). Texas Relay Operation:
-          1‑800‑RELAYTX.
-        </p>
-      </div>
     </div>
+          <div className="bg-[#0a2647] flex flex-row p-4 text-center ">
+          <p className="text-xs mx-auto flex justify-between text-white-400 ">
+            This website is not an official publication of UT Dallas and does not
+            represent the views of the university or its officers. The University
+            of Texas at Dallas is an Equal Opportunity/Affirmative Action
+            University. Students with disabilities needing special assistance to
+            attend events please call (972‑883‑2946). Texas Relay Operation:
+            1‑800‑RELAYTX.
+          </p>
+        </div>
+    </>
   );
 };
 

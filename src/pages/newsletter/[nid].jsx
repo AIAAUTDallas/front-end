@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import NewsLetter from "@/components/Blogs/templates/Newsletter";
-import Section from "@/components/Blogs/templates/Section";
-import TwoColumn from '@/components/Blogs/templates/TwoColumn';
-import TwoRow from '@/components/Blogs/templates/TwoRow';
-import Image from '@/components/Blogs/templates/Image';
-import Paragraph from '@/components/Blogs/templates/Paragraph';
-import ParagraphOnly from '@/components/Blogs/templates/ParagraphOnly';
-import List from '@/components/Blogs/templates/List';
-import NewsletterCard from '@/components/Blogs/NewsletterCard';
+import NewsLetter from "@/components/Newsletter/templates/Newsletter";
+import Section from "@/components/Newsletter/templates/Section";
+import TwoColumn from '@/components/Newsletter/templates/TwoColumn';
+import TwoRow from '@/components/Newsletter/templates/TwoRow';
+import Image from '@/components/Newsletter/templates/Image';
+import Paragraph from '@/components/Newsletter/templates/Paragraph';
+import ParagraphOnly from '@/components/Newsletter/templates/ParagraphOnly';
+import List from '@/components/Newsletter/templates/List';
+import NewsletterCard from '@/components/Newsletter/NewsletterCard';
 
 import Link from 'next/link'
 
@@ -38,31 +38,36 @@ export default function Newsletter() {
         }
     }, [router.isReady, nid])
 
+    if (!loading && !newsletter) {
+        return (
+            <NewsLetter title="Newsletter" subtitle="Subscribe to our newsletter to get the latest news and updates.">
+                <Section>
+                    <h1 className="text-2xl text-white">We are sorry, the newsletter you are looking was not found.</h1>
+                    {data && data.length > 0 && (
+                        <><h2 className="text-2xl text-white font-bold text-center">Here are some of our latest newsletters:</h2><div className="my-8 flex flex-row flex-wrap justify-center gap-12">
+                            {data.sort((a, b) => { a.date - b.date; }).map((item, index) => {
+                                if (index > 2)
+                                    return null;
+
+                                return (
+                                    <NewsletterCard key={index} {...item} />
+                                );
+                            })}
+
+                        </div></>
+                    )}
+                    <Link href="/newsletter" className="no-underline w-[200px] text-white bg-blue-600 p-2 self-center rounded-lg mt-8" >View all newsletters</Link>
+                </Section>
+            </NewsLetter>
+        )
+    }
+
     return (
         <NewsLetter title={newsletter?.title} subtitle={newsletter?.subtitle} backgroundImage={newsletter?.backgroundImage}>
             {loading && (
                 <div className="flex flex-col items-center justify-center w-full h-full bg-slate-900">
                     <h1>Loading...</h1>
                 </div>
-            )}
-
-            {!loading && !newsletter && (
-                <Section>
-                    <h1 className="text-2xl text-white">We are sorry, the newsletter you are looking was not found.</h1>
-                    <h2 className="text-2xl text-white font-bold text-center">Here are some of our latest newsletters:</h2>
-                    <div className="my-8 flex flex-row flex-wrap justify-center gap-12">
-
-                        {data.sort((a, b) => {a.date - b.date}).map((item, index) => {
-                            if (index > 2) return null;
-
-                            return (
-                                <NewsletterCard key={index} {...item} />
-                            )
-                        })}
-
-                    </div>
-                    <Link href="/newsletter" className="no-underline w-[200px] text-white bg-blue-600 p-2 self-center rounded-lg mt-8" >View all newsletters</Link>
-                </Section>
             )}
 
             {!loading && newsletter && newsletter.sections.map((section, index) => {
