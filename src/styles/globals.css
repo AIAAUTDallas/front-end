@@ -5,13 +5,13 @@
 @tailwind utilities;
 
 h1 {
-    color: white;
+    color: whitesmoke;
     font-family: 'Chivo', sans-serif;
     font-weight: 800 !important; /* specify the font weight */
 }
 
 p {
-  color: white;
+  color: whitesmoke;
 }
 
 @media(max-width: 767px) {
