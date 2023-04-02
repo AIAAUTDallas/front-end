@@ -11,7 +11,7 @@ const Navbar = () => {
     return (<>
         <div className={styles.header} onClick={() => { push("/") }}>
             <img src="/header_logo.png" alt="header logo" />
-            AIAA UTD
+            <span>AIAA UTD</span>
         </div>
         <div>
             <Nav className={styles.nav}>

@@ -90,26 +90,23 @@ const Footer = () => {
             <Link className={styles.link} href="/">
               Home
             </Link>
-            <Link className={styles.link} href="/screens/BlogScreen">
-              Blog
+            <Link className={styles.link} href="/newsletter">
+              Newsletter
             </Link>
-            <Link className={styles.link} href="/screens/CalendarScreen">
+            <Link className={styles.link} href="/calendar">
               Calendar
             </Link>
-            <Link className={styles.link} href="/screens/OrganizationScreen">
-              Organization
-            </Link>
-            <Link className={styles.link} href="/screens/ContactScreen">
-              Contact Us
-            </Link>
-            <Link className={styles.link} href="/screens/TeamScreen">
+            <Link className={styles.link} href="/team">
               Team
+            </Link>
+            <Link className={styles.link} href="/contact-us">
+              Contact Us
             </Link>
           </Nav>
         </div>
       </div>
     </div>
-          <div className="bg-[#0a2647] flex flex-row p-4 text-center ">
+          <div className="bg-[#0a2647] flex flex-row p-3 text-center ">
           <p className="text-xs mx-auto flex justify-between text-white-400 ">
             This website is not an official publication of UT Dallas and does not
             represent the views of the university or its officers. The University
