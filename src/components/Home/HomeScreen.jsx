@@ -11,7 +11,7 @@ const HomeScreen = () => {
             <Introduction />
             <Project />
             <Sponsor />
-            <Partner />
+            {/* <Partner /> */}
         </div>
     );
 };
