@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import aiaa from 'public/partner/aiaa.png'
-import makerspace from 'public/partner/makerspace.png'
-import mathworks from 'public/partner/mathworks.png'
-import onpoynt from 'public/partner/onpoynt.png'
-import utd from 'public/partner/utd.png'
-import vectornav from 'public/partner/vectornav.png'
+import aiaa from '../../../public/partner/aiaa.png'
+import makerspace from '../../../public/partner/makerspace.png'
+import mathworks from '../../../public/partner/mathworks.png'
+import onpoynt from '../../../public/partner/onpoynt.png'
+import utd from '../../../public/partner/utd.png'
+import vectornav from '../../../public/partner/vectornav.png'
 const Sponsor = () => {
     return (
         <div style={{display: 'flex', flexDirection: 'column', paddingTop: '2rem',paddingBottom: '2rem', justifyContent: 'space-around'}}> 
