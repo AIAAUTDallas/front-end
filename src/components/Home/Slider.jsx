@@ -2,11 +2,11 @@ import styles from "../../styles/Slider.module.css";
 import { Carousel } from "react-bootstrap";
 import Image from "next/image";
 
-import slider1 from "../../../public/slide1.jpg";
-import slider2 from "../../../public/slide2.jpg";
-import slider3 from "../../../public/slide3.jpg";
-import slider4 from "../../../public/slide4.jpg";
-import slider5 from "../../../public/slide5.jpg";
+import slider1 from "../../../public/carousel/slide1.jpg";
+import slider2 from "../../../public/carousel/slide2.jpg";
+import slider3 from "../../../public/carousel/slide3.jpg";
+import slider4 from "../../../public/carousel/slide4.jpg";
+import slider5 from "../../../public/carousel/slide5.jpg";
 
 export default function Slider() {
     return (<>

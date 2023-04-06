@@ -11,12 +11,10 @@ const Sponsor = () => {
         <div style={{display: 'flex', flexDirection: 'column', paddingTop: '2rem',paddingBottom: '2rem', justifyContent: 'space-around'}}> 
             <h1>Sponsors</h1>
             <div className='flex flex-auto flex-row flex-wrap justify-center w-100'>
-                <Image className='box-content p-7 object-contain h-auto w-auto max-w-[20%]'src={utd} alt="utd" />
-                <Image className='box-content p-7 object-contain h-auto w-auto max-w-[30%]' src={makerspace} alt="makerspace" />
-                <Image className='box-content p-7 object-contain h-auto w-auto max-w-[30%]'src={mathworks} alt="mathworks" />
-                <Image className='box-content p-7 object-contain h-auto w-auto max-w-[30%]' src={onpoynt} alt="onpoynt"/>
-                <Image className='box-content p-7 object-contain h-auto w-auto max-w-[30%]' src={vectornav} alt="vectornav"/>
-                <Image className='box-content p-7 object-contain h-auto w-auto max-w-[30%]' src={aiaa} alt="aiaa" />
+                <Image className='box-content m-[50px] object-contain h-auto w-auto max-w-[15%] cursor-pointer' onClick={() => window.open('https://www.utdallas.edu', '_blank')} src={utd} alt="utd" />
+                <Image className='box-content m-[50px] object-contain h-auto w-auto max-w-[40%] cursor-pointer' onClick={() => window.open('https://utdmaker.space/', '_blank')} src={makerspace} alt="makerspace" />
+                <Image className='box-content m-[50px] object-contain h-auto w-auto max-w-[25%] cursor-pointer' onClick={() => window.open('https://onpoynt.com', '_blank')} src={onpoynt} alt="onpoynt"/>
+                <Image className='box-content m-[50px] object-contain h-auto w-auto max-w-[50%] cursor-pointer' onClick={() => window.open('https://www.vectornav.com', '_blank')} src={vectornav} alt="vectornav"/>
             </div>
         </div>
     )
