@@ -44,43 +44,8 @@ const Footer = () => {
                 <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
               </svg>
             </a>
-            <a href="https://www.instagram.com/aiaa_utd/">
-              <svg
-                className="h-5 w-12 text-teal-900"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                strokeWidth="2"
-                stroke="white"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                {" "}
-                <path stroke="none" d="M0 0h24v24H0z" />{" "}
-                <rect x="4" y="4" width="16" height="16" rx="4" />{" "}
-                <circle cx="12" cy="12" r="3" />{" "}
-                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/aiaa_utd/">
-              <svg
-                className="h-5 w-12 text-teal-900"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                strokeWidth="2"
-                stroke="white"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                {" "}
-                <path stroke="none" d="M0 0h24v24H0z" />{" "}
-                <rect x="4" y="4" width="16" height="16" rx="4" />{" "}
-                <circle cx="12" cy="12" r="3" />{" "}
-                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-              </svg>
+            <a href="https://www.linkedin.com/company/aiaautd/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" fill="#fff"/></svg>
             </a>
             </div>
         </div>
