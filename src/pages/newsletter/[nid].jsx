@@ -40,7 +40,7 @@ export default function Newsletter() {
 
     if (!loading && !newsletter) {
         return (
-            <NewsLetter title="Newsletter" subtitle="Subscribe to our newsletter to get the latest news and updates.">
+            <NewsLetter title="Newsletter" subtitle="Here you'll find our monthly newsletters with the latest news and updates.">
                 <Section>
                     <h1 className="text-2xl text-white">We are sorry, the newsletter you are looking was not found.</h1>
                     {data && data.length > 0 && (
