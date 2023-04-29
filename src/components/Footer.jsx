@@ -76,9 +76,7 @@ const Footer = () => {
             This website is not an official publication of UT Dallas and does not
             represent the views of the university or its officers. The University
             of Texas at Dallas is an Equal Opportunity/Affirmative Action
-            University. Students with disabilities needing special assistance to
-            attend events please call (972‑883‑2946). Texas Relay Operation:
-            1‑800‑RELAYTX.
+            University. 
           </p>
         </div>
     </>

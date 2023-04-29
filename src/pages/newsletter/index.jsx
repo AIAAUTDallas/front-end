@@ -8,8 +8,9 @@ import Paragraph from '@/components/Newsletter/templates/Paragraph';
 import ParagraphOnly from '@/components/Newsletter/templates/ParagraphOnly';
 import List from '@/components/Newsletter/templates/List';
 import NewsletterCard from '@/components/Newsletter/NewsletterCard';
-
+import Head from "next/head";
 import data from "../../data/newsletter.json"
+
 
 const components = {
     "Paragraph": Paragraph,
@@ -21,16 +22,20 @@ const components = {
 }
 
 const Index = () => {
-    return (
+    return (<>
+        <Head>
+            <title>Newsletter | American Institute of Aeronautics and Astronautics</title>
+        </Head>
         <NewsLetter title="Newsletter" subtitle="Here you'll find our monthly newsletters with the latest news and updates.">
             <div className="my-8 flex flex-row flex-wrap justify-center gap-12">
                 {data.sort((a,b) => {a.date - b.date}).map((item, index) => {
                     return (
                         <NewsletterCard key={index} {...item} />
-                    )
-                })}
+                        )
+                    })}
             </div>
         </NewsLetter>
+    </>
     )
 }
 

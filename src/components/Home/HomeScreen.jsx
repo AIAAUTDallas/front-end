@@ -3,9 +3,13 @@ import Slider from "./Slider";
 import Project from "./Project";
 import Partner from "./Partner";
 import Sponsor from "./Sponsor";
+import Head from "next/head";
 
 const HomeScreen = () => {
-    return (
+    return (<>
+        <Head>
+            <title>Home | American Institute of Aeronautics and Astronautics</title>
+        </Head>
         <div>
             <Slider />
             <Introduction />
@@ -13,6 +17,7 @@ const HomeScreen = () => {
             <Sponsor />
             {/* <Partner /> */}
         </div>
+    </>
     );
 };
 

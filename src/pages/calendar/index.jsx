@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import dayjs from "dayjs";
-
+import Head from "next/head";
 
 import Event from "../../components/Calendar/Event";
 import styles from "../../styles/App.module.css";
@@ -31,6 +31,10 @@ const Index = ({ unformattedEvents }) => {
   }, [unformattedEvents]);
 
   return (
+    <>
+    <Head>
+            <title>Calendar | American Institute of Aeronautics and Astronautics</title>
+    </Head>
     <div className={styles.App}>
       <div className="fixed bottom-6 right-6 md:bottom-10 md:right-10 ">
         {/* up arrow */}
@@ -41,13 +45,13 @@ const Index = ({ unformattedEvents }) => {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-          >
+            >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
               d="M5 10l7-7m0 0l7 7m-7-7v18"
-            />
+              />
           </svg>
         </a>
       </div>
@@ -59,12 +63,12 @@ const Index = ({ unformattedEvents }) => {
           <div className="flex flex-row flex-wrap max-w-[400px] justify-end">
             {sectionedEvents
               ? Object.keys(sectionedEvents).map((monthYear, index) => {
-                  return (
-                    <a
-                      key={index}
-                      href={`#${monthYear}`}
-                      className="self-center text-sm p-2"
-                    >
+                return (
+                  <a
+                  key={index}
+                  href={`#${monthYear}`}
+                  className="self-center text-sm p-2"
+                  >
                       {monthYear}
                     </a>
                   );
@@ -74,7 +78,7 @@ const Index = ({ unformattedEvents }) => {
         </div>
 
         {JSON.stringify(sectionedEvents) === "{}" ? (
-            <div className="text-center mt-8 p-8 bg-gray-800 rounded-lg">
+          <div className="text-center mt-8 p-8 bg-gray-800 rounded-lg">
               <h1>No upcoming events</h1>
               <p>Check back later for more</p>
             </div>
@@ -84,9 +88,9 @@ const Index = ({ unformattedEvents }) => {
           Object.keys(sectionedEvents).map((monthYear, index) => {
             return (
               <div
-                id={monthYear}
-                key={monthYear}
-                className="flex justify-center row pt-4"
+              id={monthYear}
+              key={monthYear}
+              className="flex justify-center row pt-4"
               >
                 <div className="text-left max-h-[100px] mb-4">
                   <h1 className="text-2xl font-bold">{monthYear}</h1>
@@ -97,24 +101,25 @@ const Index = ({ unformattedEvents }) => {
               </div>
             );
           })
-        ) : (
-          <h1>loading...</h1>
-        )}
+          ) : (
+            <h1>loading...</h1>
+            )}
       </div>
     </div>
+    </>
   );
 };
 
 export const getStaticProps = async () => {
   let events = [];
-
+  
   try {
     const response = await fetch("https://eoqddhabrwwtgwj.m.pipedream.net/");
     events = (await response.json()).events;
   } catch (err) {
     console.log(err);
   }
-
+  
   return {
     props: {
       unformattedEvents: events,

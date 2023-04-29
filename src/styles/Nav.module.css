@@ -41,6 +41,7 @@
     /* font-size: ; */
   text-decoration: none;
   color: white;
+  font-weight: 600;
   text-align: right;
   margin: 7px 3vh 7px 7px;
   font-size: clamp(8px, 4vw, 18px);
