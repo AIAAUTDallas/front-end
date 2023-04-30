@@ -4,6 +4,8 @@ const officers = {
             {
                 "name": "Kevin Debord",
                 "title": "President",
+                "img" : "/officers/kevin.jpg",
+                "description" : "President"
             },
             {
                 "name": "Fernando Harmjanz",
@@ -16,10 +18,12 @@ const officers = {
             {
                 "name": "Brendan Smith",
                 "title": "DARRT Head",
+                "img" : "/officers/brendan.jpg",
             },
             {
                 "name": "Dan Bouzolin",
                 "title": "DARRT Head",
+                "img" : "/officers/dan.jpg",
             }
         ]
     },
@@ -28,10 +32,12 @@ const officers = {
             {
                 "name": "Rachel Kahler",
                 "title": "Rocketry Head",
+                "img" : "/officers/rachel.jpg",
             },
             {
                 "name": "Emmanuel Llanes",
                 "title": "L2 Electrical Lead",
+                "img" : "/officers/emmanuel.jpg",
             },
             {
                 "name": "Logan Murray",
@@ -76,6 +82,7 @@ const officers = {
             {
                 "name": "Erik Ngyuen",
                 "title": "Creative team Lead",
+                "img" : "/officers/erik.jpg",
             },
             {
                 "name": "Steven Ngyuen",

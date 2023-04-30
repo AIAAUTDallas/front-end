@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import MemberCard from "./MemberCard";
-import team_member from "../../data/TeamData";
+// import MemberCard from "./MemberCard";
+import dynamic from "next/dynamic";
 import style from "../../styles/Member.module.css";
 import officers from "../../data/OfficerData";
 
+const MemberCard = dynamic(() => import("./MemberCard"), {
+  ssr: false,
+});
 function Team() {
-  const [list, setList] = useState(team_member);
   const [officerList, setOfficerList] = useState(officers);
 
   return (
@@ -17,7 +19,7 @@ function Team() {
             {officerList.Administrative.data.map((member, index) => (
               <div key={index} style={{ display: "flex" }}>
                 <MemberCard
-                  // img={member.img}
+                  img={member.img ? member.img : null}
                   name={member.name}
                   title={member.title}
                   // description={member.description}
@@ -32,7 +34,7 @@ function Team() {
               {officerList.DARRT.data.map((member, index) => (
                 <div key={index} style={{ display: "flex" }}>
                   <MemberCard
-                    // img={member.img}
+                    img={member.img ? member.img : null}
                     name={member.name}
                     title={member.title}
                     // description={member.description}
@@ -47,7 +49,7 @@ function Team() {
               {officerList.Rocketry.data.map((member, index) => (
                 <div key={index} style={{ display: "flex" }}>
                   <MemberCard
-                    // img={member.img}
+                    img={member.img ? member.img : null}
                     name={member.name}
                     title={member.title}
                     // description={member.description}
@@ -62,7 +64,7 @@ function Team() {
               {officerList.RAD.data.map((member, index) => (
                 <div key={index} style={{ display: "flex" }}>
                   <MemberCard
-                    // img={member.img}
+                    img={member.img ? member.img : null}
                     name={member.name}
                     title={member.title}
                     // description={member.description}
@@ -77,7 +79,7 @@ function Team() {
                 {officerList["Media & Marketing"].data.map((member, index) => (
                   <div key={index} style={{ display: "flex"}}>
                     <MemberCard
-                      // img={member.img}
+                      img={member.img ? member.img : null}
                       name={member.name}
                       title={member.title}
                       // description={member.description}
@@ -92,7 +94,7 @@ function Team() {
                 {officerList["Business"].data.map((member, index) => (
                   <div key={index} style={{ display: "flex"}}>
                     <MemberCard
-                      // img={member.img}
+                      img={member.img ? member.img : null}
                       name={member.name}
                       title={member.title}
                       // description={member.description}
