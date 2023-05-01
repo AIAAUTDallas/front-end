@@ -40,12 +40,13 @@
 .link {
     /* font-size: ; */
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
   font-weight: 600;
   text-align: right;
   margin: 7px 3vh 7px 7px;
   font-size: clamp(8px, 4vw, 18px);
 }
 .link:hover {
-  color: black;
+  color: white;
+  scale: 1.1;
 }
