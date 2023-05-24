@@ -18,7 +18,7 @@ const officers = {
             {
                 "name": "Brendan Smith",
                 "title": "DARRT Head",
-                "img" : "/officers/brendan.jpg",
+                "img" : "/officers/brendan.png",
             },
             {
                 "name": "Dan Bouzolin",
