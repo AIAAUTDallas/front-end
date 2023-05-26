@@ -11,27 +11,33 @@ const Index = () => {
   const [sectionedEvents, setSectionedEvents] = useState(null);
 
   useEffect(() => {
-    console.log(unformattedEvents)
-    const filter = unformattedEvents.filter((event) => {
-      return event?.start && dayjs(event.start).isAfter(dayjs());
-    });
+    async function getEvents(){
+      const res = await fetch("/api/calendar/events");
+      const unformattedEvents = (await res.json())?.transformedEvents;
 
-    const sorted = filter.sort((a, b) => {
-      return dayjs(a.start).unix() - dayjs(b.start).unix();
-    });
+      const filter = unformattedEvents.filter((event) => {
+        return event?.start && dayjs(event.start).isAfter(dayjs());
+      });
+  
+      const sorted = filter.sort((a, b) => {
+        return dayjs(a.start).unix() - dayjs(b.start).unix();
+      });
+  
+      const sectioned = {};
+      sorted.map((event, index) => {
+        const monthYear = dayjs(event.start).format("MMMM YYYY");
+  
+        if (sectioned[monthYear] === undefined) {
+          sectioned[monthYear] = [];
+        }
+  
+        sectioned[monthYear].push(<Event key={event.id} eventInfo={event} />);
+      });
+  
+      setSectionedEvents(sectioned);
+    }
 
-    const sectioned = {};
-    sorted.map((event, index) => {
-      const monthYear = dayjs(event.start).format("MMMM YYYY");
-
-      if (sectioned[monthYear] === undefined) {
-        sectioned[monthYear] = [];
-      }
-
-      sectioned[monthYear].push(<Event key={event.id} eventInfo={event} />);
-    });
-
-    setSectionedEvents(sectioned);
+    getEvents();
   }, []);
 
   return (
