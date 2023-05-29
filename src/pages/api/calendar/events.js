@@ -11,13 +11,17 @@ export default async function index(req, res) {
 
     const events = await api.guilds.getScheduledEvents(guildId);
 
-    console.log(events)
     const transformedEvents = events.map(event => {
+      // Extract the first URL from the description
+      const REGEX_EXPRESSION = /(https?:\/\/[^\s]+)/g;
+      const matches = event?.description?.match(REGEX_EXPRESSION);
+      const url = matches ? matches[0] : null;
+
       return {
         id: event.id,
         channelId: event.channel_id,
         title: event.name,
-        url: null,
+        url: url,
         start: event.scheduled_start_time,
         end: event.scheduled_end_time,
         extendedProps: {

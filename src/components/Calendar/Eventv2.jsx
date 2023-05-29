@@ -39,12 +39,12 @@ export default function Eventv2({ eventInfo }) {
         style={
           eventInfo.extendedProps?.image
             ? {
-                backgroundImage: `url(${eventInfo.extendedProps.image}?size=1024)`,
-                backgroundSize: "contain",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                backgroundColor: "white",
-              }
+              backgroundImage: `url(${eventInfo.extendedProps.image}?size=1024)`,
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundColor: "white",
+            }
             : null
         }
       />
@@ -63,7 +63,7 @@ export default function Eventv2({ eventInfo }) {
       {/* event time information*/}
       <div className="md:px-3 py-2">
         {/* title */}
-        <h2 className="text-lg md:text-xl font-bold mb-[2px]">Event Time and Location</h2>
+        <h2 className="text-lg md:text-xl font-bold mb-[2px]">Event Time and Location in Local Time</h2>
 
         {/* event  time */}
         <div className="flex flex-col gap-1 text-sm md:text-base">
@@ -85,6 +85,15 @@ export default function Eventv2({ eventInfo }) {
           {eventInfo.extendedProps.location || "TBD"}
         </p>
       </div>
+
+      {/* event link */}
+      {eventInfo?.url && eventInfo.url !== ""  ? (
+        <div className="py-3 flex justify-center">
+          <a href={`${eventInfo.url}`} target="_blank" rel="noreferrer" className="p-2 font-semibold rounded-md self-center bg-blue-600 no-underline text-white items-end">
+            Sign up for this event
+          </a>
+        </div>
+      ) : null}
     </div>
   );
 }
