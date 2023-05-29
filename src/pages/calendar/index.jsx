@@ -3,6 +3,7 @@ import dayjs from "dayjs";
 import Head from "next/head";
 
 import Event from "../../components/Calendar/Event";
+import Eventv2 from "../../components/Calendar/Eventv2";
 import styles from "../../styles/App.module.css";
 
 import unformattedEvents from "../../data/events"
@@ -31,7 +32,8 @@ const Index = () => {
           sectioned[monthYear] = [];
         }
   
-        sectioned[monthYear].push(<Event key={event.id} eventInfo={event} />);
+        // sectioned[monthYear].push(<Event key={event.id} eventInfo={event} />);
+        sectioned[monthYear].push(<Eventv2 key={event.id + "v2"} eventInfo={event} />);
       });
   
       setSectionedEvents(sectioned);
@@ -100,12 +102,12 @@ const Index = () => {
                 <div
                   id={monthYear}
                   key={monthYear}
-                  className="flex justify-center row pt-4"
+                  className="pt-4"
                 >
                   <div className="text-left max-h-[100px] mb-4">
                     <h1 className="text-2xl font-bold">{monthYear}</h1>
                   </div>
-                  <div className="flex row gap-6">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     {sectionedEvents[monthYear]}
                   </div>
                 </div>
