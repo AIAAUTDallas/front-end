@@ -18,6 +18,14 @@ const Navbar = () => {
                 <Link className={styles.link} href='/newsletter'>Newsletter</Link>
                 <Link className={styles.link} href='/calendar'>Calendar</Link>
                 <Link className={styles.link} href='/team'>Team</Link>
+                <div className="group">
+                    <p className={styles.link}>
+                        Branches  
+                    </p>
+                    <div className="hidden group-hover:absolute group-hover:flex group-hover:flex-col group-hover:justify-center z-[999] w-[100px]">
+                        <Link className="px-3 py-2 no-underline text-white text-center font-medium bg-[#0a2647] hover:bg-[#0f3866]" href='/branches/test'>Test</Link>
+                    </div>
+                </div>
                 {/* <Link className={styles.link} href='/organizations'>Organization</Link> i don't think we're doing anything with this page */}
                 <Link className={styles.link} href='/contact-us'>Contact Us</Link>
             </Nav>
