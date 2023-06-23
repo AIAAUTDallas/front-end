@@ -11,6 +11,7 @@ export default function Document() {
   return (
       <Html lang="en">
         <Head>
+          <meta name="google-site-verification" content="Liyj-1wkdeI6UkKg-rcgXTmvA3o3USl889ja9Rk9tQc" />
           <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
