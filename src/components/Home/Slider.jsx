@@ -29,7 +29,7 @@ export default function Slider() {
                 </Carousel.Item>
             </Carousel>
             <h1 className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 font-chivo italic text-3xl">
-                THE AMERICAN INSTITUTE OF AEROSPACE AND ASTRONAUTICS AT UTD
+                THE AMERICAN INSTITUTE OF AERONAUTICS AND ASTRONAUTICS AT UTD
             </h1>
         </div>
     </>);
