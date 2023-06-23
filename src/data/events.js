@@ -26,6 +26,45 @@ const events = [
       'location': 'Frontiers of Flight Museum'
     }
 
+  },
+  {
+    // 'id': "8f826949-9aa5-44a0-a1b3-def08466db5d",
+    'groupId': "General",
+    'title': "DARRT: DFW FPV Freestyle Drone Meet",
+    'start': `5/28/2023 09:00:00 AM`,
+    'end': `5/28/2023 02:00:00 PM`,
+    'url': null,
+    'extendedProps': {
+      'groupName': "General",
+      'description': "DARRT will be joining DFW FPV at their May freestyle meetup on May 28. Any and all drones are welcome. Come out and fly with us!",
+      'location': "Pecan Grove Park - 3443 W Kiest Blvd, Dallas, TX 75233"
+    }
+  },
+  {
+    'id': "8f826949-9aa5-44a0-a1b3-def08466db5e",
+    'groupId': "General",
+    'title': "DARRT: Dallas Drone Racing Fun Fly",
+    'start': `6/10/2023 10:00:00 AM`,
+    'end': `6/10/2023 04:00:00 PM`,
+    'url': null,
+    'extendedProps': {
+      'groupName': "General",
+      'description': "Come hang out with DARRT and Dallas Drone Racing at DDR's June 10 Fun Fly event! Pilots, spectators, and all drones welcome.",
+      'location': "Dallas Drone Racing - 2304-2312 Sandy Lake Rd, Carrollton, TX 75006"
+    }
+  },
+  {
+    'id': "8f826949-9aa5-44a0-a1b3-def08466db5f",
+    'groupId': "General",
+    'title': "DARRT: Micro Drone Race",
+    'start': `6/18/2023 12:00:00 PM`,
+    'end': `6/18/2023 03:00:00 PM`,
+    'url': null,
+    'extendedProps': {
+      'groupName': "General",
+      'description': "DARRT, Dallas Drone Racing, & OnPoynt are teaming up for our monthly micro drone race on June 18. Come by and fly with us or feel free to spectate!\n1-2 cell whoops w/ prop guards only\nPilots sign up: https://www.multigp.com/races/view/?race=25389/True-Tiny-Whoopin-3",
+      'location': "17217 Waterview Pkwy, ROC 1.202 – OnPoynt R&D Lab"
+    }
   }
 ]
 
