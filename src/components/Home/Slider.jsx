@@ -28,8 +28,8 @@ export default function Slider() {
                     <Image priority={true} placeholder={"blur"} className="object-cover h-[300px] md:h-[600px]" src={slider5} alt={"AIAA officer and members having a laugh"} />
                 </Carousel.Item>
             </Carousel>
-            <h1 className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 font-chivo italic text-3xl">
-                THE AMERICAN INSTITUTE OF AERONAUTICS AND ASTRONAUTICS AT UTD
+            <h1 className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 font-chivo italic text-3xl uppercase">
+                The American Institute of Aeronautics and Astronautics at UTD
             </h1>
         </div>
     </>);
