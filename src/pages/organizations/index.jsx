@@ -1,8 +1,8 @@
-import React from 'react'
-import Organization from '../../components/Organizations/Organization'
+import React from 'react';
+import Organization from '../../components/Organizations/Organization';
 
 const Index = () => {
-    return <Organization />;
-}
+  return <Organization />;
+};
 
-export default Index
+export default Index;

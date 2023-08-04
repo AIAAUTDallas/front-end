@@ -5,7 +5,7 @@ const Introduction = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* introduction */}
         <div className="flex flex-col justify-center items-center">
-          {" "}
+          {' '}
           {/* title */}
           <h1>Who we are</h1>
           <p className="leading-relaxed md:text-lg">

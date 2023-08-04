@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import HomeScreen from '../components/Home/HomeScreen';
-import styles from '../styles/App.module.css'
+import styles from '../styles/App.module.css';
 import Head from 'next/head';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>American Institute of Aeronautics and Astronautics at UTD</title>
       </Head>
-        <HomeScreen />
+      <HomeScreen />
     </div>
   );
 }
