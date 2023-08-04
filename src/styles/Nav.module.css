@@ -13,10 +13,9 @@
   color: white;
 }
 
-.header > *:hover{
+.header > *:hover {
   cursor: pointer;
 }
-
 
 .header > img {
   height: 4vh;
@@ -38,7 +37,7 @@
 }
 
 .link {
-    /* font-size: ; */
+  /* font-size: ; */
   text-decoration: none;
   color: whitesmoke;
   font-weight: 600;

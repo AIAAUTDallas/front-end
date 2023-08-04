@@ -1,18 +1,18 @@
-import React from 'react'
+import React from 'react';
 import Team from '@/components/Team/Team';
-import Head from "next/head";
+import Head from 'next/head';
 
 const Index = () => {
-    return (
+  return (
     <>
-    <Head>
+      <Head>
         <title>Team | American Institute of Aeronautics and Astronautics</title>
-    </Head>
-    <div>
+      </Head>
+      <div>
         <Team />
-    </div>
+      </div>
     </>
-    );
+  );
 };
 
-export default Index
+export default Index;

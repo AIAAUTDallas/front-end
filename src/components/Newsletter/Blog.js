@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
-import BlogCard from "./NewsletterCard.jsx/index.js.js";
+import React, {useState} from 'react';
+import BlogCard from './NewsletterCard.jsx/index.js.js';
 // import { aiaa_org } from "../Organizations/OrgData";
 import Link from 'next/link';
 
 const Blog = () => {
-    // const [list, setList] = useState(aiaa_org);
-    return (
-        <div>
-            <h1>Blogs</h1>
-            <div style={{ display: "flex" }}>
-                {/* {list.map((member, index) => (
+  // const [list, setList] = useState(aiaa_org);
+  return (
+    <div>
+      <h1>Blogs</h1>
+      <div style={{display: 'flex'}}>
+        {/* {list.map((member, index) => (
                     <Link key={member.name + index} href='/Organization/{member.name}'>
                     <BlogCard
                         style={{ display: "flex" }}
@@ -19,9 +19,9 @@ const Blog = () => {
                     />
                     </Link>
                 ))} */}
-            </div>
-        </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Blog
+export default Blog;

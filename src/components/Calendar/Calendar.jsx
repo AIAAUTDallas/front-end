@@ -1,16 +1,16 @@
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import React, { useEffect, useState } from "react";
-import FullCalendar from "@fullcalendar/react";
-import dayGridPlugin from "@fullcalendar/daygrid";
-import listPlugin from "@fullcalendar/list";
-import bootstrap5Plugin from "@fullcalendar/bootstrap5";
-import interactionPlugin from "@fullcalendar/interaction";
-import { useMediaQuery } from "react-responsive";
+import React, {useEffect, useState} from 'react';
+import FullCalendar from '@fullcalendar/react';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import listPlugin from '@fullcalendar/list';
+import bootstrap5Plugin from '@fullcalendar/bootstrap5';
+import interactionPlugin from '@fullcalendar/interaction';
+import {useMediaQuery} from 'react-responsive';
 
-const Calendar = ({ events }) => {
-  const isTabletOrMobile = useMediaQuery({ query: `(max-width: 1024px)` });
+const Calendar = ({events}) => {
+  const isTabletOrMobile = useMediaQuery({query: `(max-width: 1024px)`});
   const calendarRef = React.createRef(null);
   const [modal, setModal] = useState({
     display: false,
@@ -18,19 +18,19 @@ const Calendar = ({ events }) => {
   });
 
   const calendarConfiguration = {
-    timeZone: "UTC",
+    timeZone: 'UTC',
     plugins: [dayGridPlugin, listPlugin, bootstrap5Plugin, interactionPlugin],
-    initialView: "dayGridMonth",
+    initialView: 'dayGridMonth',
     headerToolbar: {
-      left: "prev,next",
-      center: "title",
-      right: "dayGridMonth,dayGridWeek,dayGridDay,listMonth", // user can switch between the two
+      left: 'prev,next',
+      center: 'title',
+      right: 'dayGridMonth,dayGridWeek,dayGridDay,listMonth', // user can switch between the two
     },
     events: events,
     eventContent: renderEventContent,
     contentHeight: 800,
-    height: "auto",
-    eventBackgroundColor: "#007bff",
+    height: 'auto',
+    eventBackgroundColor: '#007bff',
     dayMaxEventRows: 4,
     eventClick: handleEventClick,
   };
@@ -55,10 +55,10 @@ const Calendar = ({ events }) => {
   }
 
   useEffect(() => {
-    console.log("View Changed", isTabletOrMobile);
-    const { current: calendarDom } = calendarRef;
+    console.log('View Changed', isTabletOrMobile);
+    const {current: calendarDom} = calendarRef;
     const API = calendarDom ? calendarDom.getApi() : null;
-    API && API.changeView(isTabletOrMobile ? "listMonth" : "dayGridMonth");
+    API && API.changeView(isTabletOrMobile ? 'listMonth' : 'dayGridMonth');
   }, [isTabletOrMobile]);
 
   return (
@@ -78,7 +78,7 @@ const Calendar = ({ events }) => {
         eventClick={calendarConfiguration.eventClick}
         ref={calendarRef}
       />
-      
+
       {/* Tooltop */}
       {modal.display === true && (
         <div
@@ -107,16 +107,22 @@ const Calendar = ({ events }) => {
               </div>
               <div className="p-6 text-left">
                 <p className="text-base leading-relaxed text-gray-300">
-                <span className="font-bold text-white mr-2">Start Time:</span>{modal.eventInfo.event.start.toString()}
+                  <span className="font-bold text-white mr-2">Start Time:</span>
+                  {modal.eventInfo.event.start.toString()}
                 </p>
                 <p className="text-base leading-relaxed text-gray-300">
-                  <span className="font-bold text-white mr-2">End Time:</span>{modal.eventInfo.event.end.toString()}
+                  <span className="font-bold text-white mr-2">End Time:</span>
+                  {modal.eventInfo.event.end.toString()}
                 </p>
                 <p className="text-base leading-relaxed text-gray-300">
-                  <span className="font-bold text-white mr-2">Sign Up Form:</span>{modal.eventInfo.event.url || "No Sign Up Form"}
+                  <span className="font-bold text-white mr-2">
+                    Sign Up Form:
+                  </span>
+                  {modal.eventInfo.event.url || 'No Sign Up Form'}
                 </p>
                 <p className="text-base leading-relaxed text-gray-300">
-                  <span className="font-bold text-white mr-2">Location:</span>{modal.eventInfo.event.extendedProps.location}
+                  <span className="font-bold text-white mr-2">Location:</span>
+                  {modal.eventInfo.event.extendedProps.location}
                 </p>
               </div>
             </div>
