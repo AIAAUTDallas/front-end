@@ -2,11 +2,15 @@ import React, {useEffect, useState} from 'react';
 import dayjs from 'dayjs';
 import Head from 'next/head';
 
-import Event from '../../components/Calendar/Event';
 import Eventv2 from '../../components/Calendar/Eventv2';
 import styles from '../../styles/App.module.css';
 
-import unformattedEvents from '../../data/events';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
 const Index = () => {
   const [sectionedEvents, setSectionedEvents] = useState(null);
@@ -75,7 +79,7 @@ const Index = () => {
           </a>
         </div>
 
-        <div className="container-md p-4 min-h-[95vh]">
+        <div className="p-4 min-h-[95vh]">
           {/* <Calendar events={events.events}/> */}
           <div className="flex justify-between">
             <h1 className="text-left" id="upcoming-events-title">
@@ -114,7 +118,7 @@ const Index = () => {
                   <div className="text-left max-h-[100px] mb-4">
                     <h1 className="text-2xl font-bold">{monthYear}</h1>
                   </div>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {sectionedEvents[monthYear]}
                   </div>
                 </div>
