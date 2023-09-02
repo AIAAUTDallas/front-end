@@ -58,6 +58,58 @@ const routes = [
 ];
 
 export default function Navbar() {
+  function renderMenuLinkWithChildren(route) {
+    return (
+      <li className="rounded-none" key={route.name} tabIndex={0}>
+        <details>
+          <summary className="text-lg text-white font-bold no-underline">
+            {route.name}
+          </summary>
+          <ul className="menu menu-sm dropdown-content z-[1] p-2 border-1 shadow bg-[#1746a2] w-72 rounded-none">
+            {route.children.map((child) => {
+              return (
+                <li className="rounded-none p-1" key={child.name}>
+                  <Link
+                    href={child.path}
+                    className="text-lg text-white font-bold no-underline"
+                  >
+                    {child.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </details>
+      </li>
+    )
+  }
+  
+  function renderMobileMenuItemWithChildren(route) {
+    return (
+      <li className="rounded-none" key={route.name} tabIndex={0}>
+        <p
+          className="text-lg text-white font-bold no-underline mb-0"
+        >
+          {route.name}
+        </p>
+        <ul>
+          {route.children.map((child) => {
+            return (
+              <li className="rounded-none p-1" key={child.name}>
+                <Link
+                  href={child.path}
+                  className="text-lg text-white font-bold no-underline"
+                >
+                  {child.name}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </li>
+    )
+  }
+
   return (
     <nav className="navbar bg-[#0a2647] px-2 md:px-4 flex items-center text-white">
       {/* Logo */}
@@ -143,55 +195,3 @@ export default function Navbar() {
     </nav>
   );
 };
-
-function renderMenuLinkWithChildren(route) {
-  return (
-    <li className="rounded-none" key={route.name} tabIndex={0}>
-      <details>
-        <summary className="text-lg text-white font-bold no-underline">
-          {route.name}
-        </summary>
-        <ul className="menu menu-sm dropdown-content z-[1] p-2 border-1 shadow bg-[#1746a2] w-72 rounded-none">
-          {route.children.map((child) => {
-            return (
-              <li className="rounded-none p-1" key={child.name}>
-                <Link
-                  href={child.path}
-                  className="text-lg text-white font-bold no-underline"
-                >
-                  {child.name}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </details>
-    </li>
-  )
-}
-
-function renderMobileMenuItemWithChildren(route) {
-  return (
-    <li className="rounded-none" key={route.name} tabIndex={0}>
-      <p
-        className="text-lg text-white font-bold no-underline mb-0"
-      >
-        {route.name}
-      </p>
-      <ul>
-        {route.children.map((child) => {
-          return (
-            <li className="rounded-none p-1" key={child.name}>
-              <Link
-                href={child.path}
-                className="text-lg text-white font-bold no-underline"
-              >
-                {child.name}
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </li>
-  )
-}
