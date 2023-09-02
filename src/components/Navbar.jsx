@@ -125,7 +125,7 @@ export default function Navbar() {
       </div>
 
       {/* Links */}
-      <div clasNames="navbar-end hidden xl:flex items-center">
+      <div className="navbar-end hidden xl:flex items-center">
         <ul className="menu menu-horizontal px-1 mb-0 gap-2">
           {routes.map((route) => {
             if (!route?.children) {
