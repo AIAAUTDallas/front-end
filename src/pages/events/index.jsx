@@ -48,7 +48,7 @@ const Index = () => {
     <>
       <Head>
         <title>
-          Calendar | American Institute of Aeronautics and Astronautics
+          Events | American Institute of Aeronautics and Astronautics
         </title>
       </Head>
       <div className={styles.App}>
