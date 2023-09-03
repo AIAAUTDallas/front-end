@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import NewsLetter from '@/components/Newsletter/templates/Newsletter';
 import Section from '@/components/Newsletter/templates/Section';
