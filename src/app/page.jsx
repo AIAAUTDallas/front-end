@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import HomeScreen from '../components/Home/HomeScreen';
 import styles from '../styles/App.module.css';
