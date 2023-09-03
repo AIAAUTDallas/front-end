@@ -9,6 +9,16 @@ const nextConfig = {
       },
     ],
   },
+  webpack: (config, { isServer }) => {
+    // Only apply this configuration on the server side
+    if (isServer) {
+      config.module.rules.push({
+        test: /\.node$/, // Match any file with .node extension
+        loader: 'node-loader', // Use node-loader to handle this file type
+      });
+    }
+    return config;
+  },
 };
 
 module.exports = nextConfig;
