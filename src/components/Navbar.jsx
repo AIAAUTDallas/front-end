@@ -27,7 +27,7 @@ const routes = [
   //     },
   //     {
   //       name: 'Business',
-  //       path: '/branches/business', 
+  //       path: '/branches/business',
   //     },
   //     {
   //       name: 'Marketing',
@@ -81,15 +81,13 @@ export default function Navbar() {
           </ul>
         </details>
       </li>
-    )
+    );
   }
-  
+
   function renderMobileMenuItemWithChildren(route) {
     return (
       <li className="rounded-none" key={route.name} tabIndex={0}>
-        <p
-          className="text-lg text-white font-bold no-underline mb-0"
-        >
+        <p className="text-lg text-white font-bold no-underline mb-0">
           {route.name}
         </p>
         <ul>
@@ -107,7 +105,7 @@ export default function Navbar() {
           })}
         </ul>
       </li>
-    )
+    );
   }
 
   return (
@@ -194,4 +192,4 @@ export default function Navbar() {
       </div>
     </nav>
   );
-};
+}
