@@ -2,32 +2,28 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from '../../styles/Member.module.css';
+import Image from 'next/image';
 
-const MemberCard = ({img, name, title, description}) => {
+const MemberCard = ({ img, name, title, description }) => {
   return (
-    <Card className={style.card}>
+    <div className='card w-80 flex flex-col'>
       {img && (
-        <Card.Img
-          priorty={true}
-          placehold={'blur'}
-          variant="top"
-          src={img}
-          className={style.topImg}
-          alt={name}
-        />
+        <figure className='aspect-square'>
+          <Image
+            priorty={true}
+            placeholder={'empty'}
+            src={img}
+            className="w-full object-cover rounded-lg z-0"
+            alt={name}
+            fill
+          />
+        </figure>
       )}
-      <p className={style.cardBody}>
-        <Card.Title style={{display: 'table', color: 'white'}}>
-          {name}
-        </Card.Title>
-        <Card.Text style={{display: 'table', color: 'white'}}>
-          {title}
-        </Card.Text>
-        <Card.Text style={{display: 'table', color: 'white'}}>
-          {description}
-        </Card.Text>
-      </p>
-    </Card>
+      <div className="bg-[#0f172a] card-body text-white z-10 rounded-md">
+        <h2 className="card-title">{name}</h2>
+        <p>{title}</p>
+      </div>
+    </div>
   );
 };
 
