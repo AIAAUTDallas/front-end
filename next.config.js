@@ -12,7 +12,7 @@ const nextConfig = {
       },
     ],
   },
-  webpack: (config, { isServer }) => {
+  webpack: (config, {isServer}) => {
     // Only apply this configuration on the server side
     if (isServer) {
       config.module.rules.push({

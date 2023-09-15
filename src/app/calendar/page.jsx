@@ -8,7 +8,7 @@ import Event from '../../components/Calendar/Event';
 import Eventv2 from '../../components/Calendar/Eventv2';
 import styles from '../../styles/App.module.css';
 
-import unformattedEvents from '../../data/events'
+import unformattedEvents from '../../data/events';
 
 const Index = () => {
   const [sectionedEvents, setSectionedEvents] = useState(null);

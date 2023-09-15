@@ -14,7 +14,7 @@ import NewsletterCard from '@/components/Newsletter/NewsletterCard';
 import Link from 'next/link';
 
 import {useRouter} from 'next/router';
-import data from '../../../data/newsletter.json'
+import data from '../../../data/newsletter.json';
 
 const components = {
   Paragraph: Paragraph,

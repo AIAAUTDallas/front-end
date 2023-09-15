@@ -17,7 +17,7 @@ const Sponsor = () => {
         justifyContent: 'space-around',
       }}
     >
-      <h1 className='text-[2vw]'>Sponsors</h1>
+      <h1 className="text-[2vw]">Sponsors</h1>
       <div className="flex flex-auto flex-row flex-wrap justify-center w-100">
         <Image
           className="box-content m-[50px] object-contain h-auto w-auto max-w-[15%] cursor-pointer"

@@ -4,11 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import style from '../../styles/Member.module.css';
 import Image from 'next/image';
 
-const MemberCard = ({ img, name, title, description }) => {
+const MemberCard = ({img, name, title, description}) => {
   return (
-    <div className='card w-80 flex flex-col'>
+    <div className="card w-80 flex flex-col">
       {img && (
-        <figure className='aspect-square'>
+        <figure className="aspect-square">
           <Image
             priorty={true}
             placeholder={'empty'}
