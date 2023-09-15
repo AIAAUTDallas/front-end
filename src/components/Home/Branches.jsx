@@ -11,7 +11,7 @@ import aiaa from 'public/branchLogos/aiaa.png'
 export default function Branches() {
   return (
   <>
-    <h1 className='my-4'>Branches</h1>
+    <h1 className='my-4 text-[2vw]'>Branches</h1>
     <div className='relative w-full h-full flex items-center justify-center'>
         <div className='flex flex-col justify-center items-center absolute'>
           <div className='grid grid-cols-3 justify-center items-center mx-[10%] w-fill'>
