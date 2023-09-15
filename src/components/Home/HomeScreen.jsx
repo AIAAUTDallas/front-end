@@ -1,7 +1,7 @@
 import Introduction from './Introduction';
 import Slider from './Slider';
-import Project from './Project';
-import Partner from './Partner';
+import Project from './Branches';
+import Branches from './Branches';
 import Sponsor from './Sponsor';
 import Head from 'next/head';
 
@@ -14,7 +14,7 @@ const HomeScreen = () => {
       <div>
         <Slider />
         <Introduction />
-        <Project />
+        <Branches />
         <Sponsor />
         {/* <Partner /> */}
       </div>
