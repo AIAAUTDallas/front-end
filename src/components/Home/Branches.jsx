@@ -41,18 +41,17 @@ const routes = [
 export default function Branches() {
   return (
     <>
-      <h1>Branches</h1>
-      <h3 className="text-lg text-white font-bold no-underline mb-0">
-        {/* <select>
+      {/* <h3 className="text-lg text-white font-bold no-underline mb-0">
+        <select>
         {routes.map((route) => (
-        
+          
           <option value={route.path}>
-            <a href={route.path}> {route.name}</a>
-            </option>
-            
-        ))}
-      </select> */}
-      </h3>
+          <a href={route.path}> {route.name}</a>
+          </option>
+          
+          ))}
+          </select>
+        </h3> */}
       <div className="relative flex items-center justify-center">
         <Image
           src={astronautPic}
@@ -60,6 +59,7 @@ export default function Branches() {
           alt="Picture of astronaut in space"
         />
         <div className="flex flex-col justify-center items-center absolute">
+        <h1 className='text-[3vw]'>Branches</h1>
           <div className="grid grid-cols-3 justify-center items-center mx-[10%] w-full gap-[1vw]">
             <Branch
               branchName={'Drone Engineering Corps (DEC)'}
