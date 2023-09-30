@@ -59,7 +59,7 @@ export default function Branches() {
           alt="Picture of astronaut in space"
         />
         <div className="flex flex-col justify-center items-center absolute">
-        <h1 className='text-[3vw]'>Branches</h1>
+          <h1 className="text-[3vw]">Branches</h1>
           <div className="grid grid-cols-3 justify-center items-center mx-[10%] w-full gap-[1vw]">
             <Branch
               branchName={'Drone Engineering Corps (DEC)'}
