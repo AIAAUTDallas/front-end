@@ -4,6 +4,7 @@ import React from 'react';
 import HomeScreen from '../components/Home/HomeScreen';
 import styles from '../styles/App.module.css';
 import Head from 'next/head';
+// import '../styles/globals.css'
 
 export default function Home() {
   return (

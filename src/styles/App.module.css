@@ -2,3 +2,37 @@
   text-align: center;
   background-color: #0f172a;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  color: whitesmoke;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 800 !important; /* specify the font weight */
+}
+
+p {
+  color: whitesmoke;
+}
+
+@media (max-width: 767px) {
+  .fc-toolbar.fc-header-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk:nth-child(1) {
+    order: 3;
+  }
+  .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk:nth-child(2) {
+    order: 1;
+  }
+  .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk:nth-child(3) {
+    order: 2;
+  }
+}
+
