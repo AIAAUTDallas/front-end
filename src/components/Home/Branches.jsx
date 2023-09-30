@@ -8,13 +8,62 @@ import dbf from 'public/branchLogos/dbf.png';
 import arc from 'public/branchLogos/arc.png';
 import business from 'public/branchLogos/business.png';
 import aiaa from 'public/branchLogos/aiaa.png';
+import Link from 'next/link';
+
+const routes = [
+  {
+    name: 'Drone Engineering Corps',
+    path: '',
+  },
+  {
+    name: 'Comet Rocketry',
+    path: '',
+  },
+  {
+    name: 'Design Build Fly',
+    path: '',
+  },
+  {
+    name: 'Aerospace Research Corps',
+    path: '',
+  },
+  {
+    name: 'Business',
+    path: '',
+  },
+  {
+    name: 'Marketing',
+    path: '',
+  },
+  {
+    name: 'Web',
+    path: '',
+  },
+];
 export default function Branches() {
+
   return (
     <>
-      <h1 className="my-4 text-[2vw]">Branches</h1>
-      <div className="relative w-full h-full flex items-center justify-center">
+      <h1>Branches</h1>
+      <h3 className="text-lg text-white font-bold no-underline mb-0">
+        {/* <select>
+        {routes.map((route) => (
+        
+          <option value={route.path}>
+            <a href={route.path}> {route.name}</a>
+            </option>
+            
+        ))}
+      </select> */}
+      </h3>
+      <div className="relative flex items-center justify-center">
+        <Image
+          src={astronautPic}
+          className="object-scale-down w-[100vw] "
+          alt="Picture of astronaut in space"
+        />
         <div className="flex flex-col justify-center items-center absolute">
-          <div className="grid grid-cols-3 justify-center items-center mx-[10%] w-fill">
+          <div className="grid grid-cols-3 justify-center items-center mx-[10%] w-full gap-[1vw]">
             <Branch
               branchName={'Drone Engineering Corps (DEC)'}
               branchLogo="dec"
@@ -41,16 +90,13 @@ export default function Branches() {
               src={business}
             />
             <Branch branchName={'Marketing'} branchLogo="aiaa" src={aiaa} />
-            <div />
+            <div/>
             <Branch branchName={'Web Dev'} branchLogo="aiaa" src={aiaa} />
           </div>
         </div>
-        <Image
-          src={astronautPic}
-          className="object-fill h-full"
-          alt="Picture of astronaut in space"
-        />
       </div>
     </>
+
+  
   );
 }
