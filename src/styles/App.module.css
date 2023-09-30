@@ -4,12 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .App {
   text-align: center;
   background-color: #0f172a;
 }
-
 
 h1 {
   color: whitesmoke;
