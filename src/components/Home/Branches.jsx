@@ -44,9 +44,9 @@ export default function Branches() {
 
   return (
     <>
-      <h1 className="my-4 text-[2vw]">Branches</h1>
+      <h1>Branches</h1>
       <h3 className="text-lg text-white font-bold no-underline mb-0">
-        <select>
+        {/* <select>
         {routes.map((route) => (
         
           <option value={route.path}>
@@ -54,11 +54,16 @@ export default function Branches() {
             </option>
             
         ))}
-      </select>
+      </select> */}
       </h3>
-      <div className="relative w-full h-full flex items-center justify-center">
+      <div className="relative flex items-center justify-center">
+        <Image
+          src={astronautPic}
+          className="object-scale-down w-[100vw] "
+          alt="Picture of astronaut in space"
+        />
         <div className="flex flex-col justify-center items-center absolute">
-          <div className="grid grid-cols-3 justify-center items-center mx-[10%] w-fill">
+          <div className="grid grid-cols-3 justify-center items-center mx-[10%] w-full gap-[1vw]">
             <Branch
               branchName={'Drone Engineering Corps (DEC)'}
               branchLogo="dec"
@@ -85,15 +90,10 @@ export default function Branches() {
               src={business}
             />
             <Branch branchName={'Marketing'} branchLogo="aiaa" src={aiaa} />
-            <div />
+            <div/>
             <Branch branchName={'Web Dev'} branchLogo="aiaa" src={aiaa} />
           </div>
         </div>
-        <Image
-          src={astronautPic}
-          className="object-fill h-full"
-          alt="Picture of astronaut in space"
-        />
       </div>
     </>
 
