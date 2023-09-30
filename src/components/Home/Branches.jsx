@@ -41,7 +41,6 @@ const routes = [
   },
 ];
 export default function Branches() {
-
   return (
     <>
       <h1>Branches</h1>
@@ -90,13 +89,11 @@ export default function Branches() {
               src={business}
             />
             <Branch branchName={'Marketing'} branchLogo="aiaa" src={aiaa} />
-            <div/>
+            <div />
             <Branch branchName={'Web Dev'} branchLogo="aiaa" src={aiaa} />
           </div>
         </div>
       </div>
     </>
-
-  
   );
 }

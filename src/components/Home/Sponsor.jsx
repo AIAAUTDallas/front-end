@@ -50,58 +50,62 @@ const Sponsor = () => {
           alt="vectornav"
         />
       </div> */}
-          <h2 className='text-white text-center p-2'>Platnium Sponsor</h2>
-        <div className="flex flex-auto flex-row flex-wrap justify-center items-center w-100">
-          {/* <h3 className="text-white text-center flex flex-auto flex-row flex-wrap justify-center w-100">Platinum Sponsor</h3> */}
-          <Image
-            className="box-content px-8 object-contain cursor-pointer max-w-[30vw]"
-            onClick={() => window.open('https://www.vectornav.com/', '_blank')}
-            src={vectornav}
-            alt="vectornav"
-          />
-          <Image
-            className="box-content px-8 object-contain cursor-pointer max-w-[30vw] sm:max-w-[20vw]"
-            onClick={() => window.open('https://onpoynt.com/', '_blank')}
-            src={onpoynt}
-            alt="onpoynt"
-          />
-        </div>
-        <h2 className='text-white text-center pt-[5vh]'>Gold Sponsor</h2>
-        <div className="flex flex-auto flex-row flex-wrap justify-center items-center w-100 ">
-          <Image
-            className="box-content m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw] sm:max-w-[15vw]"
-            onClick={() => window.open('https://www.l3harris.com/', '_blank')}
-            src={L3Harris}
-            alt="L3Harris"
-          />
-            <Image
-            className="box-content m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw]"
-            onClick={() => window.open('https://www.mouser.com/', '_blank')}
-            src={mouser}
-            alt="mouser"
-          />
-            <Image
-            className="box-content m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw]"
-            onClick={() => window.open('https://www.spiritaero.com/', '_blank')}
-            src={spirit}
-            alt="spirit"
-          />
-        </div>
-        <h2 className='text-white text-center pt-[5vh]'>Contributer</h2>
-        <div className="flex flex-auto flex-row flex-wrap justify-center w-100">
-          <Image
-            className="box-content m-[25px] object-contain cursor-pointer w-xl max-h-[10vh] w-auto px-8 max-w-[30vw]"
-            onClick={() => window.open('https://www.dwconsultingllc.com/', '_blank')}
-            src={dwconsulting}
-            alt="dwconsulting"
-          />
-          <Image
-            className="box-content m-[25px] object-contain cursor-pointer max-h-[10vh] w-auto max-w-[30vw]"
-            onClick={() => window.open('https://labs.utdallas.edu/conlab/', '_blank')}
-            src={conlab}
-            alt="conlab"
-          />
-        </div>
+      <h2 className="text-white text-center p-2">Platnium Sponsor</h2>
+      <div className="flex flex-auto flex-row flex-wrap justify-center items-center w-100">
+        {/* <h3 className="text-white text-center flex flex-auto flex-row flex-wrap justify-center w-100">Platinum Sponsor</h3> */}
+        <Image
+          className="box-content px-8 object-contain cursor-pointer max-w-[30vw]"
+          onClick={() => window.open('https://www.vectornav.com/', '_blank')}
+          src={vectornav}
+          alt="vectornav"
+        />
+        <Image
+          className="box-content px-8 object-contain cursor-pointer max-w-[30vw] sm:max-w-[20vw]"
+          onClick={() => window.open('https://onpoynt.com/', '_blank')}
+          src={onpoynt}
+          alt="onpoynt"
+        />
+      </div>
+      <h2 className="text-white text-center pt-[5vh]">Gold Sponsor</h2>
+      <div className="flex flex-auto flex-row flex-wrap justify-center items-center w-100 ">
+        <Image
+          className="box-content m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw] sm:max-w-[15vw]"
+          onClick={() => window.open('https://www.l3harris.com/', '_blank')}
+          src={L3Harris}
+          alt="L3Harris"
+        />
+        <Image
+          className="box-content m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw]"
+          onClick={() => window.open('https://www.mouser.com/', '_blank')}
+          src={mouser}
+          alt="mouser"
+        />
+        <Image
+          className="box-content m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw]"
+          onClick={() => window.open('https://www.spiritaero.com/', '_blank')}
+          src={spirit}
+          alt="spirit"
+        />
+      </div>
+      <h2 className="text-white text-center pt-[5vh]">Contributer</h2>
+      <div className="flex flex-auto flex-row flex-wrap justify-center w-100">
+        <Image
+          className="box-content m-[25px] object-contain cursor-pointer w-xl max-h-[10vh] w-auto px-8 max-w-[30vw]"
+          onClick={() =>
+            window.open('https://www.dwconsultingllc.com/', '_blank')
+          }
+          src={dwconsulting}
+          alt="dwconsulting"
+        />
+        <Image
+          className="box-content m-[25px] object-contain cursor-pointer max-h-[10vh] w-auto max-w-[30vw]"
+          onClick={() =>
+            window.open('https://labs.utdallas.edu/conlab/', '_blank')
+          }
+          src={conlab}
+          alt="conlab"
+        />
+      </div>
     </div>
   );
 };
