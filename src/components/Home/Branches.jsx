@@ -1,4 +1,3 @@
-import styles from '../../styles/Branch.module.css';
 import Branch from './Branch';
 import Image from 'next/image';
 import astronautPic from 'public/astronaut.png';
@@ -8,7 +7,6 @@ import dbf from 'public/branchLogos/dbf.png';
 import arc from 'public/branchLogos/arc.png';
 import business from 'public/branchLogos/business.png';
 import aiaa from 'public/branchLogos/aiaa.png';
-import Link from 'next/link';
 
 const routes = [
   {
