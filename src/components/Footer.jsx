@@ -24,7 +24,7 @@ const Footer = () => {
             <p className="text-center">
               Aggressively Pursuing Aerospace Opportunity
             </p>
-            <p className="text-center">© 2022, AIAA UTD.</p>
+            <p className="text-center">© 2023, AIAA UTD.</p>
           </div>
 
           <div className="flex flex-col justify-center py-2 md:py-4 w-full md:w-1/3">
