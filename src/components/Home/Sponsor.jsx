@@ -51,7 +51,7 @@ const Sponsor = () => {
         />
       </div> */}
       <h2 className="text-white text-sm md:text-[2vw] text-center md:pt-16 underline">Platnium Sponsor</h2>
-      <div className="flex flex-auto flex-row flex-wrap justify-center items-center w-100">
+      <div className="flex flex-auto flex-row flex-wrap justify-center items-center w-100 md:pt-8">
         {/* <h3 className="text-white text-center flex flex-auto flex-row flex-wrap justify-center w-100">Platinum Sponsor</h3> */}
         <Image
           className="box-content px-8 object-contain cursor-pointer max-w-[30vw]"
@@ -69,19 +69,19 @@ const Sponsor = () => {
       <h2 className="text-white text-sm md:text-[2vw] text-center md:pt-16 underline">Gold Sponsor</h2>
       <div className="flex flex-auto flex-row flex-wrap justify-center items-center w-100 ">
         <Image
-          className="box-content m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw] sm:max-w-[15vw]"
+          className="box-content md:m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw] sm:max-w-[15vw]"
           onClick={() => window.open('https://www.l3harris.com/', '_blank')}
           src={L3Harris}
           alt="L3Harris"
         />
         <Image
-          className="box-content m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw]"
+          className="box-content mx-4 md:m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw]"
           onClick={() => window.open('https://www.mouser.com/', '_blank')}
           src={mouser}
           alt="mouser"
         />
         <Image
-          className="box-content m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw]"
+          className="box-content md:m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw]"
           onClick={() => window.open('https://www.spiritaero.com/', '_blank')}
           src={spirit}
           alt="spirit"
@@ -90,7 +90,7 @@ const Sponsor = () => {
       <h2 className="text-white text-sm md:text-[2vw] text-center md:pt-16 underline">Contributer</h2>
       <div className="flex flex-auto flex-row flex-wrap justify-center w-100">
         <Image
-          className="box-content m-[25px] object-contain cursor-pointer w-xl max-h-[10vh] w-auto px-8 max-w-[30vw]"
+          className="box-content mt-3 object-contain cursor-pointer w-xl max-h-[10vh] w-auto px-8 max-w-[30vw]"
           onClick={() =>
             window.open('https://www.dwconsultingllc.com/', '_blank')
           }
@@ -98,7 +98,7 @@ const Sponsor = () => {
           alt="dwconsulting"
         />
         <Image
-          className="box-content m-[25px] object-contain cursor-pointer max-h-[10vh] w-auto max-w-[30vw]"
+          className="box-content m-3 md:m-[25px] object-contain cursor-pointer max-h-[10vh] w-auto max-w-[30vw]"
           onClick={() =>
             window.open('https://labs.utdallas.edu/conlab/', '_blank')
           }
