@@ -12,11 +12,11 @@ function Team() {
 
   return (
     <div className={style.team}>
-      <h1 className="pt-4">Administrative</h1>
+      <h1 className="pt-4">Executive</h1>
       <div className={style.cards}>
-        <div className="flex flex-wrap content-center justify-center gap-8 gap-x-8">
-          {officerList.Administrative.data.map((member, index) => (
-            <div key={index} className="flex min-h-[24rem]">
+        <div className="flex flex-wrap content-center justify-center gap-x-2 md:gap-x-8 w-full">
+          {officerList.Executive.data.map((member, index) => (
+            <div key={index} className="flex min-h-[16vw] md:min-h-[24vw]">
               <MemberCard
                 img={member.img ? member.img : null}
                 name={member.name}
@@ -27,11 +27,26 @@ function Team() {
           ))}
         </div>
       </div>
-      <h1>DARRT</h1>
+      <h1 className="p-4">DBF (Design Build Fly)</h1>
+      <div className-={style.cards}>
+        <div className="flex flex-wrap content-center justify-center gap-8">
+          {officerList.DBF.data.map((member, index) => (
+            <div key={index} className="flex min-h-[16vw] md:min-h-[24vw]">
+              <MemberCard
+                img={member.img ? member.img : null}
+                name={member.name}
+                title={member.title}
+                // description={member.description}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <h1 className="p-4">DEC (Drone Engineering Core)</h1>
       <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
-          {officerList.DARRT.data.map((member, index) => (
-            <div key={index} className="flex min-h-[24rem]">
+          {officerList.DEC.data.map((member, index) => (
+            <div key={index} className="flex min-h-[16vw] md:min-h-[24vw]">
               <MemberCard
                 img={member.img ? member.img : null}
                 name={member.name}
@@ -43,11 +58,11 @@ function Team() {
         </div>
         /
       </div>
-      <h1>Rocketry</h1>
+      <h1 className="p-4">CR (Comet Rocketry)</h1>
       <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
           {officerList.Rocketry.data.map((member, index) => (
-            <div key={index} className="flex min-h-[24rem]">
+            <div key={index} className="flex min-h-[16vw] md:min-h-[24vw]">
               <MemberCard
                 img={member.img ? member.img : null}
                 name={member.name}
@@ -58,11 +73,11 @@ function Team() {
           ))}
         </div>
       </div>
-      <h1>RAD</h1>
+      <h1 className="p-4">ARC (Aerospace Research Corps)</h1>
       <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
-          {officerList.RAD.data.map((member, index) => (
-            <div key={index} className="flex min-h-[24rem]">
+          {officerList.ARC.data.map((member, index) => (
+            <div key={index} className="flex min-h-[16vw] md:min-h-[24vw]">
               <MemberCard
                 img={member.img ? member.img : null}
                 name={member.name}
@@ -73,11 +88,11 @@ function Team() {
           ))}
         </div>
       </div>
-      <h1>Media & Marketing</h1>
+      <h1 className="p-4">Media & Marketing</h1>
       <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
           {officerList['Media & Marketing'].data.map((member, index) => (
-            <div key={index} className="flex min-h-[24rem]">
+            <div key={index} className="flex min-h-[16vw] md:min-h-[24vw]">
               <MemberCard
                 img={member.img ? member.img : null}
                 name={member.name}
@@ -88,11 +103,26 @@ function Team() {
           ))}
         </div>
       </div>
-      <h1>Business</h1>
+      <h1 className="p-4">Business</h1>
       <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
           {officerList['Business'].data.map((member, index) => (
-            <div key={index} className="flex min-h-[24rem]">
+            <div key={index} className="flex min-h-[16vw] md:min-h-[24vw]">
+              <MemberCard
+                img={member.img ? member.img : null}
+                name={member.name}
+                title={member.title}
+                // description={member.description}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <h1 className="p-4">Web</h1>
+      <div className={style.cards}>
+        <div className="flex flex-wrap content-center justify-center gap-8">
+          {officerList['Web'].data.map((member, index) => (
+            <div key={index} className="flex min-h-[16vw] md:min-h-[24vw]">
               <MemberCard
                 img={member.img ? member.img : null}
                 name={member.name}

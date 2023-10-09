@@ -4,7 +4,7 @@ import astronautPic from 'public/astronaut.png';
 import dec from 'public/branchLogos/dec.png';
 import cr from 'public/branchLogos/cr.png';
 import dbf from 'public/branchLogos/dbf.png';
-import arc from 'public/branchLogos/arc.png';
+import arc from 'public/branchLogos/arc.png'; 
 import business from 'public/branchLogos/business.png';
 import aiaa from 'public/branchLogos/aiaa.png';
 
@@ -59,7 +59,8 @@ export default function Branches() {
           alt="Picture of astronaut in space"
         />
         <div className="flex flex-col justify-center items-center absolute">
-          <h1 className="text-[3vw]">Branches</h1>
+        <h1 className='text-lg md:text-[3vw] pt-2 mb-0'>Branches</h1>
+
           <div className="grid grid-cols-3 justify-center items-center mx-[10%] w-full gap-[1vw]">
             <Branch
               branchName={'Drone Engineering Corps (DEC)'}
