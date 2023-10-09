@@ -17,13 +17,13 @@ const Sponsor = () => {
       style={{
         display: 'flex',
         flexDirection: 'column',
-        paddingTop: '2rem',
+        // paddingTop: '2rem',
         paddingBottom: '2rem',
         justifyContent: 'space-around',
         alignItems: 'center',
       }}
     >
-      <h1 className='text-[3vw]'>Sponsors</h1>
+      <h1 className='text-lg md:text-[3vw] mb-0 mt-[1vh] md:mt-8'>Sponsors</h1>
       {/* <div className="flex flex-auto flex-row flex-wrap justify-center w-100">
         <Image
           className="box-content m-[50px] object-contain h-auto w-auto max-w-[15%] cursor-pointer"
@@ -50,7 +50,7 @@ const Sponsor = () => {
           alt="vectornav"
         />
       </div> */}
-      <h2 className="text-white text-[2vw] text-center p-2">Platnium Sponsor</h2>
+      <h2 className="text-white text-sm md:text-[2vw] text-center md:pt-16 underline">Platnium Sponsor</h2>
       <div className="flex flex-auto flex-row flex-wrap justify-center items-center w-100">
         {/* <h3 className="text-white text-center flex flex-auto flex-row flex-wrap justify-center w-100">Platinum Sponsor</h3> */}
         <Image
@@ -66,7 +66,7 @@ const Sponsor = () => {
           alt="onpoynt"
         />
       </div>
-      <h2 className="text-white text-center text-[2vw] pt-[5vh]">Gold Sponsor</h2>
+      <h2 className="text-white text-sm md:text-[2vw] text-center md:pt-16 underline">Gold Sponsor</h2>
       <div className="flex flex-auto flex-row flex-wrap justify-center items-center w-100 ">
         <Image
           className="box-content m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw] sm:max-w-[15vw]"
@@ -87,7 +87,7 @@ const Sponsor = () => {
           alt="spirit"
         />
       </div>
-      <h2 className="text-white text-[2vw] text-center pt-[5vh]">Contributer</h2>
+      <h2 className="text-white text-sm md:text-[2vw] text-center md:pt-16 underline">Contributer</h2>
       <div className="flex flex-auto flex-row flex-wrap justify-center w-100">
         <Image
           className="box-content m-[25px] object-contain cursor-pointer w-xl max-h-[10vh] w-auto px-8 max-w-[30vw]"

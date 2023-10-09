@@ -7,7 +7,7 @@ const Introduction = () => {
         <div className="flex flex-col justify-center items-center">
           {' '}
           {/* title */}
-          <h1 className="text-[2vw]">Who we are</h1>
+          <h1 className="text-lg md:text-[2vw]">Who we are</h1>
           <p className="leading-relaxed md:text-lg">
             American Institute of Aeronautics and Astronautics (AIAA) is the
             principal society of aerospace engineers and scientists. At the

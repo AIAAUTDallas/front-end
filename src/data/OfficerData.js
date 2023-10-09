@@ -1,5 +1,5 @@
 const officers = {
-  Administrative: {
+  Executive: {
     data: [
       {
         name: 'Kevin Debord',
@@ -8,97 +8,176 @@ const officers = {
         description: 'President',
       },
       {
-        name: 'Fernando Harmjanz',
+        name: 'Jack Finnegan',
         title: 'Vice President',
       },
+      {
+        name: 'Josh Price',
+        title: 'Secretary',
+      }
     ],
   },
-  DARRT: {
+  DEC: {
     data: [
       {
         name: 'Brendan Smith',
-        title: 'DARRT Head',
-        img: '/officers/brendan.png',
+        title: 'DEC Director',
       },
       {
         name: 'Dan Bouzolin',
-        title: 'DARRT Head',
-        img: '/officers/dan.jpg',
+        title: 'DEC Director',
       },
     ],
   },
   Rocketry: {
     data: [
       {
-        name: 'Rachel Kahler',
-        title: 'Rocketry Head',
-        img: '/officers/rachel.jpg',
+        name: 'Logan Murray',
+        title: 'Rocketry Director',
       },
       {
         name: 'Emmanuel Llanes',
-        title: 'L2 Electrical Lead',
-        img: '/officers/emmanuel.jpg',
-      },
-      {
-        name: 'Logan Murray',
-        title: 'L2 Mechanical Lead',
+        title: 'CR Avionics',
       },
       {
         name: 'Gabe Butuc',
-        title: 'L2 Software Lead',
-      },
-      {
-        name: 'Jack Finnegan',
-        title: 'L1 Lead',
+        title: 'CR Chief Engineer',
       },
       {
         name: 'Andy Azucar',
-        title: 'L1 Lead',
+        title: 'CR L1 Lead',
+      },
+      {
+        name: 'Brennan',
+        title: 'CR L1 Lead',
       },
     ],
   },
-  RAD: {
+  ARC: {
     data: [
       {
-        name: 'Fayez Yusuf',
-        title: 'RAD Head',
-      },
-      {
         name: 'Joel Augustine',
-        title: 'RAD Project Leader',
+        title: 'ARC Director',
       },
       {
-        name: 'Clark Swartzfager',
-        title: 'RAD Project Leader',
-      },
-      {
-        name: 'Nicholas Melvin',
-        title: 'RAD Project Leader',
+        name: 'Avram Bingham',
+        title: 'VAWT ARC Lead',
       },
     ],
   },
   'Media & Marketing': {
     data: [
       {
-        name: 'Erik Ngyuen',
-        title: 'Creative team Lead',
-        img: '/officers/erik.jpg',
+        name: 'Cooper Mays',
+        title: 'Marketing Director',
       },
       {
-        name: 'Steven Ngyuen',
-        title: 'Web Developer Lead',
+        name: 'Aura Mosquear',
+        title: 'AIAA Marketing',
       },
-      // {
-      //     "name": "Wen-Lan Yang",
-      //     "title": "Designer"
-      // }
+      {
+        name: 'Ayesha Azhar',
+        title: 'CR Marketing',
+      },
+      {
+        name: 'Diego Villegas',
+        title: 'Media Head',
+      },
+      {
+        name: 'Kaelon Christle',
+        title: 'Graphic Design'
+      }, 
+      {
+        name: 'Karen Arreguin',
+        title: 'ARC Marketing'
+      }, 
+      {
+        name: 'Ly Vu',
+        title: 'DEC Marketing'
+      },
+      {
+        name: 'Wen-Lan Yang',
+        title: 'Poster Design'
+      }
     ],
+  },
+  Web: {
+    data: [
+      {
+        name: 'Steven Nguyen',
+        title: 'Web Director'
+      },
+      {
+        name: 'Bhavesh Mandalapu',
+        title: 'Web Developer'
+      },
+      {
+        name: 'Fernando Portillo',
+        title: 'Web Developer'
+      },
+      {
+        name: 'Tri Pham',
+        title: 'Web Developer'
+      }
+    ]
+  },
+  DBF: {
+    data: [
+      {
+        name: 'Carey Mueller',
+        title: 'DBF Director',
+      },
+      {
+        name: 'Ben Jeffery',
+        title: 'DBF Mechanics Lead',
+      },
+      {
+        name: "Ben Sanguinetti",
+        title: "DBF Chief Engineer",
+      },
+      {
+        name: 'Gaby C',
+        title: 'DBF Mechanics Lead'
+      },
+      {
+        name: 'Max Pollard',
+        title: 'DBF Aero Lead'
+      },
+      {
+        name: 'Zachary Zarn',
+        title: 'DBF Electrical Lead'
+      }
+    ]
   },
   Business: {
     data: [
       {
-        name: 'Akhyl Kushavar',
-        title: 'Business team Lead',
+        name: 'Edmund Pascalis',
+        title: 'Treasurer',
+      },
+      {
+        name: 'Dennis Lo',
+        title: 'DBF Marketing',
+      },
+      {
+        name: 'Devansh Mahajan',
+        title: 'Sponsorships',
+      },
+      {
+        name: 'Logan Gonzalez',
+        title: 'Sponsorships',
+      },
+      {
+        name: 'Michael Kwon',
+        title: 'DBF Business',
+      },
+      {
+        name: 'Rohit Rao',
+        title: 'CR Business',
+      },
+      {
+        name: 'Xiomara Aragon',
+        title: 'Sponsorships',
       },
     ],
   },
