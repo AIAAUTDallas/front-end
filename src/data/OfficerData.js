@@ -14,7 +14,7 @@ const officers = {
       {
         name: 'Josh Price',
         title: 'Secretary',
-      }
+      },
     ],
   },
   DEC: {
@@ -85,41 +85,41 @@ const officers = {
       },
       {
         name: 'Kaelon Christle',
-        title: 'Graphic Design'
-      }, 
+        title: 'Graphic Design',
+      },
       {
         name: 'Karen Arreguin',
-        title: 'ARC Marketing'
-      }, 
+        title: 'ARC Marketing',
+      },
       {
         name: 'Ly Vu',
-        title: 'DEC Marketing'
+        title: 'DEC Marketing',
       },
       {
         name: 'Wen-Lan Yang',
-        title: 'Poster Design'
-      }
+        title: 'Poster Design',
+      },
     ],
   },
   Web: {
     data: [
       {
         name: 'Steven Nguyen',
-        title: 'Web Director'
+        title: 'Web Director',
       },
       {
         name: 'Bhavesh Mandalapu',
-        title: 'Web Developer'
+        title: 'Web Developer',
       },
       {
         name: 'Fernando Portillo',
-        title: 'Web Developer'
+        title: 'Web Developer',
       },
       {
         name: 'Tri Pham',
-        title: 'Web Developer'
-      }
-    ]
+        title: 'Web Developer',
+      },
+    ],
   },
   DBF: {
     data: [
@@ -132,22 +132,22 @@ const officers = {
         title: 'DBF Mechanics Lead',
       },
       {
-        name: "Ben Sanguinetti",
-        title: "DBF Chief Engineer",
+        name: 'Ben Sanguinetti',
+        title: 'DBF Chief Engineer',
       },
       {
         name: 'Gaby C',
-        title: 'DBF Mechanics Lead'
+        title: 'DBF Mechanics Lead',
       },
       {
         name: 'Max Pollard',
-        title: 'DBF Aero Lead'
+        title: 'DBF Aero Lead',
       },
       {
         name: 'Zachary Zarn',
-        title: 'DBF Electrical Lead'
-      }
-    ]
+        title: 'DBF Electrical Lead',
+      },
+    ],
   },
   Business: {
     data: [
