@@ -24,6 +24,7 @@ const Sponsor = () => {
       }}
     >
       <h1 className='text-lg md:text-[3vw] mb-0 mt-[1vh] md:mt-8'>Sponsors</h1>
+
       {/* <div className="flex flex-auto flex-row flex-wrap justify-center w-100">
         <Image
           className="box-content m-[50px] object-contain h-auto w-auto max-w-[15%] cursor-pointer"
@@ -67,6 +68,7 @@ const Sponsor = () => {
         />
       </div>
       <h2 className="text-white text-sm md:text-[2vw] text-center md:pt-16 underline">Gold Sponsor</h2>
+
       <div className="flex flex-auto flex-row flex-wrap justify-center items-center w-100 ">
         <Image
           className="box-content md:m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw] sm:max-w-[15vw]"
