@@ -73,7 +73,9 @@ function Team() {
           ))}
         </div>
       </div>
-      <h1 className="p-4 text-3xl md:text-5xl">ARC (Aerospace Research Corps)</h1>
+      <h1 className="p-4 text-3xl md:text-5xl">
+        ARC (Aerospace Research Corps)
+      </h1>
       <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
           {officerList.ARC.data.map((member, index) => (
