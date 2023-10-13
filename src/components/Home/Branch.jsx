@@ -3,9 +3,9 @@ import Image from 'next/image';
 export default function Branch(props) {
   return (
     <>
-      <div className="flex justify-center flex-col items-center">
-        <Image src={props.src} className="max-w-[20vw]" />
-        <h1 className="text-[1.75vw]">{props.branchName}</h1>
+      <div className="flex justify-center flex-col items-center py-2">
+        <Image src={props.src} className="w-96 scale-75 md:scale-100" alt='' />
+        <h1 className="text-lg">{props.branchName}</h1>
       </div>
     </>
   );
