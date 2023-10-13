@@ -12,7 +12,7 @@ function Team() {
 
   return (
     <div className={style.team}>
-      <h1 className="pt-4 text-5xl">Executive</h1>
+      <h1 className="pt-4 text-3xl md:text-5xl">Executive</h1>
       <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-x-2 md:gap-x-8 w-full">
           {officerList.Executive.data.map((member, index) => (
@@ -27,7 +27,7 @@ function Team() {
           ))}
         </div>
       </div>
-      <h1 className="p-4 text-5xl">DBF (Design Build Fly)</h1>
+      <h1 className="p-4 text-3xl md:text-5xl">DBF (Design Build Fly)</h1>
       <div className-={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
           {officerList.DBF.data.map((member, index) => (
@@ -42,7 +42,7 @@ function Team() {
           ))}
         </div>
       </div>
-      <h1 className="p-4 text-5xl">DEC (Drone Engineering Core)</h1>
+      <h1 className="p-4 text-3xl md:text-5xl">DEC (Drone Engineering Core)</h1>
       <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
           {officerList.DEC.data.map((member, index) => (
@@ -58,7 +58,7 @@ function Team() {
         </div>
         /
       </div>
-      <h1 className="p-4 text-5xl">CR (Comet Rocketry)</h1>
+      <h1 className="p-4 text-3xl md:text-5xl">CR (Comet Rocketry)</h1>
       <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
           {officerList.Rocketry.data.map((member, index) => (
@@ -73,7 +73,7 @@ function Team() {
           ))}
         </div>
       </div>
-      <h1 className="p-4 text-5xl">ARC (Aerospace Research Corps)</h1>
+      <h1 className="p-4 text-3xl md:text-5xl">ARC (Aerospace Research Corps)</h1>
       <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
           {officerList.ARC.data.map((member, index) => (
@@ -88,7 +88,7 @@ function Team() {
           ))}
         </div>
       </div>
-      <h1 className="p-4 text-5xl">Media & Marketing</h1>
+      <h1 className="p-4 text-3xl md:text-5xl">Media & Marketing</h1>
       <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
           {officerList['Media & Marketing'].data.map((member, index) => (
@@ -103,7 +103,7 @@ function Team() {
           ))}
         </div>
       </div>
-      <h1 className="p-4 text-5xl">Business</h1>
+      <h1 className="p-4 text-3xl md:text-5xl">Business</h1>
       <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
           {officerList['Business'].data.map((member, index) => (
@@ -118,7 +118,7 @@ function Team() {
           ))}
         </div>
       </div>
-      <h1 className="p-4 text-5xl">Web</h1>
+      <h1 className="p-4 text-3xl md:text-5xl">Web</h1>
       <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
           {officerList['Web'].data.map((member, index) => (
