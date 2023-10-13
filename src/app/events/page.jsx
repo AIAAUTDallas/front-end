@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import dayjs from 'dayjs';
 import Head from 'next/head';
 
@@ -86,16 +86,16 @@ const Index = () => {
             <div className="flex flex-row flex-wrap max-w-[400px] justify-end">
               {sectionedEvents
                 ? Object.keys(sectionedEvents).map((monthYear, index) => {
-                  return (
-                    <a
-                      key={index}
-                      href={`#${monthYear}`}
-                      className="self-center text-sm p-2 underline text-blue-800 hover:text-blue-500"
-                    >
-                      {monthYear}
-                    </a>
-                  );
-                })
+                    return (
+                      <a
+                        key={index}
+                        href={`#${monthYear}`}
+                        className="self-center text-sm p-2 underline text-blue-800 hover:text-blue-500"
+                      >
+                        {monthYear}
+                      </a>
+                    );
+                  })
                 : ''}
             </div>
           </div>
