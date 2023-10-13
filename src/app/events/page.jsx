@@ -1,6 +1,6 @@
 'use client';
 
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import Head from 'next/head';
 
@@ -19,7 +19,7 @@ const Index = () => {
       const unformattedEvents = (await res.json())?.transformedEvents;
 
       const filter = unformattedEvents.filter((event) => {
-        return event?.start && dayjs(event.start).isAfter(dayjs());
+        return event?.end && dayjs(event.end).isAfter(dayjs());
       });
 
       const sorted = filter.sort((a, b) => {
@@ -80,22 +80,22 @@ const Index = () => {
         <div className="container-md p-4 min-h-[95vh]">
           {/* <Calendar events={events.events}/> */}
           <div className="flex justify-between">
-            <h1 className="text-left" id="upcoming-events-title">
+            <h1 className="text-left text-5xl" id="upcoming-events-title">
               Upcoming Events
             </h1>
             <div className="flex flex-row flex-wrap max-w-[400px] justify-end">
               {sectionedEvents
                 ? Object.keys(sectionedEvents).map((monthYear, index) => {
-                    return (
-                      <a
-                        key={index}
-                        href={`#${monthYear}`}
-                        className="self-center text-sm p-2"
-                      >
-                        {monthYear}
-                      </a>
-                    );
-                  })
+                  return (
+                    <a
+                      key={index}
+                      href={`#${monthYear}`}
+                      className="self-center text-sm p-2 underline text-blue-800 hover:text-blue-500"
+                    >
+                      {monthYear}
+                    </a>
+                  );
+                })
                 : ''}
             </div>
           </div>
