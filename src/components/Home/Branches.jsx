@@ -40,59 +40,44 @@ const routes = [
 ];
 export default function Branches() {
   return (
-    <>
-      {/* <h3 className="text-lg text-white font-bold no-underline mb-0">
-        <select>
-        {routes.map((route) => (
-          
-          <option value={route.path}>
-          <a href={route.path}> {route.name}</a>
-          </option>
-          
-          ))}
-          </select>
-        </h3> */}
-      <div className="relative flex items-center justify-center">
-        <Image
-          src={astronautPic}
-          className="object-scale-down w-[100vw] "
-          alt="Picture of astronaut in space"
-        />
-        <div className="flex flex-col justify-center items-center absolute">
-          <h1 className="text-lg md:text-[3vw] pt-2 mb-0">Branches</h1>
-
-          <div className="grid grid-cols-3 justify-center items-center mx-[10%] w-full gap-[1vw]">
-            <Branch
-              branchName={'Drone Engineering Corps (DEC)'}
-              branchLogo="dec"
-              src={dec}
-            />
-            <Branch
-              branchName={'Comet Rocketry (CR)'}
-              branchLogo="cr"
-              src={cr}
-            />
-            <Branch
-              branchName={'Design Build Fly (DBF)'}
-              branchLogo="dbf"
-              src={dbf}
-            />
-            <Branch
-              branchName={'Aerospace Research Corps (ARC)'}
-              branchLogo="arc"
-              src={arc}
-            />
-            <Branch
-              branchName={'Business'}
-              branchLogo="business"
-              src={business}
-            />
-            <Branch branchName={'Marketing'} branchLogo="aiaa" src={aiaa} />
-            <div />
-            <Branch branchName={'Web Dev'} branchLogo="aiaa" src={aiaa} />
-          </div>
+    <div className="min-h-full py-16 px-8" style={{
+      backgroundImage: `url(${astronautPic.src})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+    }}>
+      <h1 className="text-5xl">Branches</h1>
+      <div className="flex flex-col justify-center items-center">
+        <div className="grid grid-cols-1 md:gap-4 w-full content-center md:grid-cols-2 lg:grid-cols-3">
+          <Branch
+            branchName={'Drone Engineering Corps (DEC)'}
+            branchLogo="dec"
+            src={dec}
+          />
+          <Branch
+            branchName={'Comet Rocketry (CR)'}
+            branchLogo="cr"
+            src={cr}
+          />
+          <Branch
+            branchName={'Design Build Fly (DBF)'}
+            branchLogo="dbf"
+            src={dbf}
+          />
+          <Branch
+            branchName={'Aerospace Research Corps (ARC)'}
+            branchLogo="arc"
+            src={arc}
+          />
+          <Branch
+            branchName={'Business'}
+            branchLogo="business"
+            src={business}
+          />
+          <Branch branchName={'Marketing'} branchLogo="aiaa" src={aiaa} />
+          <div className='hidden md:block' />
+          <Branch branchName={'Web Dev'} branchLogo="aiaa" src={aiaa} />
         </div>
       </div>
-    </>
+    </div>
   );
 }

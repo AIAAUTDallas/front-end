@@ -1,21 +1,21 @@
 const Introduction = () => {
   return (
-    <div className="py-20 px-[20px]">
+    <div className="py-20 px-4 md:px-20">
       {/* introduction and video */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-16 min-h-[64svh] content-center lg:grid-cols-2">
         {/* introduction */}
         <div className="flex flex-col justify-center items-center">
           {' '}
           {/* title */}
-          <h1 className="text-lg md:text-[2vw]">Who we are</h1>
-          <p className="leading-relaxed md:text-lg">
+          <h1 className="text-5xl my-4">Who we are</h1>
+          <p className="leading-relaxed text-lg">
             American Institute of Aeronautics and Astronautics (AIAA) is the
             principal society of aerospace engineers and scientists. At the
             University of Texas at Dallas (UTD), we are a project-based student
             organization hosting technical and professional activities to
             prepare students for a career in the aerospace industry.
           </p>
-          <p className="leading-relaxed md:text-lg">
+          <p className="leading-relaxed text-lg">
             From aircraft and drones to rockets and wind turbines, AIAA UTD
             provides aspiring aerospace engineers the opportunity to build
             engineering experience even on a campus without an aerospace major.
