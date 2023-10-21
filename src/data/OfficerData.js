@@ -10,10 +10,12 @@ const officers = {
       {
         name: 'Jack Finnegan',
         title: 'Vice President',
+        img: '/officers/jack.jpg',
       },
       {
         name: 'Josh Price',
         title: 'Secretary',
+        img: '/officers/josh.jpg',
       },
     ],
   },
@@ -26,6 +28,7 @@ const officers = {
       {
         name: 'Dan Bouzolin',
         title: 'DEC Director',
+        img: '/officers/dan.jpg',
       },
     ],
   },
@@ -70,6 +73,7 @@ const officers = {
       {
         name: 'Cooper Mays',
         title: 'Marketing Director',
+        img: '/officers/cooper.jpg',
       },
       {
         name: 'Aura Mosquear',
@@ -82,6 +86,7 @@ const officers = {
       {
         name: 'Diego Villegas',
         title: 'Media Head',
+        img: '/officers/diego.jpg',
       },
       {
         name: 'Kaelon Christle',
@@ -98,6 +103,7 @@ const officers = {
       {
         name: 'Wen-Lan Yang',
         title: 'Poster Design',
+        img: '/officers/wen.jpg',
       },
     ],
   },
@@ -106,6 +112,7 @@ const officers = {
       {
         name: 'Steven Nguyen',
         title: 'Web Director',
+        img: '/officers/steven.jpg',
       },
       {
         name: 'Bhavesh Mandalapu',
@@ -126,10 +133,12 @@ const officers = {
       {
         name: 'Carey Mueller',
         title: 'DBF Director',
+        img: '/officers/carey.jpg',
       },
       {
         name: 'Ben Jeffery',
         title: 'DBF Mechanics Lead',
+        img: '/officers/ben_j.jpg',
       },
       {
         name: 'Ben Sanguinetti',
@@ -154,6 +163,7 @@ const officers = {
       {
         name: 'Edmund Pascalis',
         title: 'Treasurer',
+        img: '/officers/edmund.jpg',
       },
       {
         name: 'Dennis Lo',
@@ -162,6 +172,7 @@ const officers = {
       {
         name: 'Devansh Mahajan',
         title: 'Sponsorships',
+        img: '/officers/devansh.jpg',
       },
       {
         name: 'Logan Gonzalez',
@@ -178,6 +189,7 @@ const officers = {
       {
         name: 'Xiomara Aragon',
         title: 'Sponsorships',
+        img: '/officers/xiomara.jpg',
       },
     ],
   },
