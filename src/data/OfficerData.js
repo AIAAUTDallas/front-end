@@ -65,6 +65,7 @@ const officers = {
       {
         name: 'Avram Bingham',
         title: 'VAWT ARC Lead',
+        img: '/officers/avram.jpg',
       },
     ],
   },
@@ -145,12 +146,14 @@ const officers = {
         title: 'DBF Chief Engineer',
       },
       {
-        name: 'Gaby C',
+        name: 'Gaby Castaneda',
         title: 'DBF Mechanics Lead',
+        img: '/officers/gaby.jpg',
       },
       {
         name: 'Max Pollard',
         title: 'DBF Aero Lead',
+        img: '/officers/max.jpg',
       },
       {
         name: 'Zachary Zarn',
@@ -177,6 +180,7 @@ const officers = {
       {
         name: 'Logan Gonzalez',
         title: 'Sponsorships',
+        img: '/officers/logan_g.jpg',
       },
       {
         name: 'Michael Kwon',
