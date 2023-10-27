@@ -11,6 +11,8 @@ import dwconsulting from '../../../public/Partner/dwconsulting.png';
 import conlab from '../../../public/Partner/conlab.png';
 import spirit from '../../../public/Partner/spirit.png';
 import mouser from '../../../public/Partner/mouser.png';
+import iBioRFCASL from '../../../public/Partner/iBioRFCASL.png';
+import NTBAA from '../../../public/Partner/NTBAA.png';
 const Sponsor = () => {
   return (
     <div
@@ -54,7 +56,7 @@ const Sponsor = () => {
       <h2 className="text-white text-sm md:text-[2vw] text-center md:pt-16 underline">
         Platnium Sponsor
       </h2>
-      <div className="flex flex-auto flex-row flex-wrap justify-center items-center w-100 md:pt-8">
+      <div className="flex flex-auto flex-row flex-wrap justify-center items-center py-4 w-100 md:pt-8">
         {/* <h3 className="text-white text-center flex flex-auto flex-row flex-wrap justify-center w-100">Platinum Sponsor</h3> */}
         <Image
           className="box-content px-8 object-contain cursor-pointer max-w-[30vw]"
@@ -75,7 +77,7 @@ const Sponsor = () => {
 
       <div className="flex flex-auto flex-row flex-wrap justify-center items-center w-100 ">
         <Image
-          className="box-content md:m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw] sm:max-w-[15vw]"
+          className="box-content md:m-[25px] object-contain h-auto w-auto cursor-pointer py-4 max-w-[30vw] sm:max-w-[15vw]"
           onClick={() => window.open('https://www.l3harris.com/', '_blank')}
           src={L3Harris}
           alt="L3Harris"
@@ -87,13 +89,13 @@ const Sponsor = () => {
           alt="mouser"
         />
         <Image
-          className="box-content md:m-[25px] object-contain h-auto w-auto cursor-pointer max-w-[30vw]"
+          className="box-content md:m-[25px] object-contain h-auto w-auto cursor-pointer py-2 max-w-[30vw]"
           onClick={() => window.open('https://www.spiritaero.com/', '_blank')}
           src={spirit}
           alt="spirit"
         />
       </div>
-      <h2 className="text-white text-sm md:text-[2vw] text-center md:pt-16 underline">
+      <h2 className="text-white text-sm md:text-[2vw] text-center py-2 md:pt-16 underline">
         Contributer
       </h2>
       <div className="flex flex-auto flex-row flex-wrap justify-center w-100">
@@ -112,6 +114,18 @@ const Sponsor = () => {
           }
           src={conlab}
           alt="conlab"
+        />
+        <Image
+          className="box-content m-3 md:m-[25px] object-contain cursor-pointer max-h-[10vh] w-auto max-w-[30vw]"
+          onClick={() => window.open('https://labs.utdallas.edu/ibiorfcasl/', '_blank')}
+          src={iBioRFCASL}
+          alt="iBioRFCASL"
+        />
+        <Image
+          className="box-content m-3 md:m-[25px] object-contain cursor-pointer max-h-[10vh] w-auto max-w-[30vw]"
+          onClick={() => window.open('https://ntbaaonline.com/', '_blank')}
+          src={NTBAA}
+          alt="NTBAA"
         />
       </div>
     </div>
