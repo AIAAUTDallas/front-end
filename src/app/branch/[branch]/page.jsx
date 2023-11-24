@@ -14,12 +14,12 @@ export default function Branch({params}) {
 
   const officerData = params.branch == 'Marketing' ? officers['Media & Marketing'] : officers[params.branch]
 
-  console.log(params.branch);
-  console.log(branches);
-
   return (
     <div className="w-full">
-      <div className="bg-[url(/branchPics/DBF/Cover.png)] bg-cover bg-center bg-no-repeat h-96 w-auto flex text-center items-center">
+      <div
+        style={{backgroundImage: `url(/branchPics/${params.branch}/Cover.jpg)`}}
+        className={`bg-cover bg-center bg-no-repeat h-96 w-auto flex text-center items-center`}
+      >
         <div className="w-full">
           <h1>{params.branch}</h1>
         </div>
@@ -29,15 +29,15 @@ export default function Branch({params}) {
         <p className="m-0 max-w-3xl">{branches[params.branch].about}</p>
 
         <h2 className="text-white">Officers</h2>
-        <div className='grid grid-cols-2 gap-x-8'>
+        <div className="grid grid-cols-2 gap-x-8">
           {officerData.data.map((officer, idx) => {
             return (
-                <MemberCard
-                  img={officer.img ? officer.img : null}
-                  name={officer.name}
-                  position={officer.title}
-                  key={idx}
-                />
+              <MemberCard
+                img={officer.img ? officer.img : null}
+                name={officer.name}
+                position={officer.title}
+                key={idx}
+              />
             );
           })}
         </div>
