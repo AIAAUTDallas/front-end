@@ -12,6 +12,11 @@ export default function Branch({params}) {
 
   if (!brancheNames.includes(params.branch)) router.push('/');
 
+  const officerData = params.branch == 'Marketing' ? officers['Media & Marketing'] : officers[params.branch]
+
+  console.log(params.branch);
+  console.log(branches);
+
   return (
     <div className="w-full">
       <div className="bg-[url(/branchPics/DBF/Cover.png)] bg-cover bg-center bg-no-repeat h-96 w-auto flex text-center items-center">
@@ -25,7 +30,7 @@ export default function Branch({params}) {
 
         <h2 className="text-white">Officers</h2>
         <div className='grid grid-cols-2 gap-x-8'>
-          {officers[params.branch].data.map((officer, idx) => {
+          {officerData.data.map((officer, idx) => {
             return (
                 <MemberCard
                   img={officer.img ? officer.img : null}

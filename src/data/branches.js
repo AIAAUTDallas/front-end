@@ -29,7 +29,7 @@ export const branches = {
         cover: '',
         images: '',
     },
-    'Media & Marketing': {
+    Marketing: {
         name: 'Marketing',
         about: 'The Marketing Branch consists of officers tasked with media management for AIAA UTD. They specialize in photography, videography, graphic design, and social media to promote the organization. This branch is led by the Marketing Director and includes all Marketing Specialists.',
         cover: '',
