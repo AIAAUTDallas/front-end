@@ -79,7 +79,7 @@ const Index = () => {
 
         <div className="container-md p-4 min-h-[95vh]">
           {/* <Calendar events={events.events}/> */}
-          <div className="flex justify-between">
+          <div className="flex justify-center">
             <h1 className="text-left text-5xl" id="upcoming-events-title">
               Upcoming Events
             </h1>
@@ -123,7 +123,7 @@ const Index = () => {
               );
             })
           ) : (
-            <h1>loading...</h1>
+            <h2 className='text-white py-2'>Loading...</h2>
           )}
         </div>
       </div>
