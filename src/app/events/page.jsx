@@ -123,7 +123,7 @@ const Index = () => {
               );
             })
           ) : (
-            <h2 className='text-white py-2'>Loading...</h2>
+            <h2 className="text-white py-2">Loading...</h2>
           )}
         </div>
       </div>

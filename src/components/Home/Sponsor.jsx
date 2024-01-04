@@ -101,9 +101,7 @@ const Sponsor = () => {
       <div className="flex flex-auto flex-row flex-wrap justify-center w-100">
         <Image
           className="box-content mt-3 object-contain cursor-pointer w-xl max-h-[10vh] w-auto px-8 max-w-[30vw]"
-          onClick={() =>
-            window.open('https://www.thedwcs.com/', '_blank')
-          }
+          onClick={() => window.open('https://www.thedwcs.com/', '_blank')}
           src={dwconsulting}
           alt="dwconsulting"
         />
