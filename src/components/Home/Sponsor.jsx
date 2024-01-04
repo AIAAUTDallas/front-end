@@ -117,7 +117,9 @@ const Sponsor = () => {
         />
         <Image
           className="box-content m-3 md:m-[25px] object-contain cursor-pointer max-h-[10vh] w-auto max-w-[30vw]"
-          onClick={() => window.open('https://labs.utdallas.edu/ibiorfcasl/', '_blank')}
+          onClick={() =>
+            window.open('https://labs.utdallas.edu/ibiorfcasl/', '_blank')
+          }
           src={iBioRFCASL}
           alt="iBioRFCASL"
         />
