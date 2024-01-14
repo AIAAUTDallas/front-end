@@ -37,6 +37,7 @@ const officers = {
       {
         name: 'Logan Murray',
         title: 'Rocketry Director',
+        img: '/officers/logan_m.jpg',
       },
       {
         name: 'Emmanuel Llanes',
