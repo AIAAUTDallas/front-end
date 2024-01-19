@@ -3,12 +3,8 @@
 import React, {useEffect, useState} from 'react';
 import dayjs from 'dayjs';
 import Head from 'next/head';
-
-import Event from '../../components/Calendar/Event';
 import Eventv2 from '../../components/Calendar/Eventv2';
 import styles from '../../styles/App.module.css';
-
-import unformattedEvents from '../../data/events';
 
 const Index = () => {
   const [sectionedEvents, setSectionedEvents] = useState(null);
@@ -79,7 +75,7 @@ const Index = () => {
 
         <div className="container-md p-4 min-h-[95vh]">
           {/* <Calendar events={events.events}/> */}
-          <div className="flex justify-center">
+          <div className="flex justify-between">
             <h1 className="text-left text-5xl" id="upcoming-events-title">
               Upcoming Events
             </h1>

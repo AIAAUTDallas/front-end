@@ -16,11 +16,12 @@ const MONTHS = [
   'December',
 ];
 
-export default function Eventv2({eventInfo}) {
+export default function Eventv2({ eventInfo }) {
   const startDate = dayjs(eventInfo.start).format('MMMM D, YYYY');
   const endDate = dayjs(eventInfo.end).format('MMMM D, YYYY');
   const eventStartTime = dayjs(eventInfo.start).format('h:mm A');
   const eventEndTime = dayjs(eventInfo.end).format('h:mm A');
+  const image = eventInfo.extendedProps?.image ?? "/header_logo.png"
 
   return (
     // card wrapper
@@ -37,15 +38,14 @@ export default function Eventv2({eventInfo}) {
       <div
         className="w-full h-[150px] md:h-[175px] p-2 rounded-md"
         style={
-          eventInfo.extendedProps?.image
-            ? {
-                backgroundImage: `url(${eventInfo.extendedProps.image}?size=1024)`,
-                backgroundSize: 'contain',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                backgroundColor: 'white',
-              }
-            : null
+          {
+            backgroundImage: `url(${image}?size=1024)`,
+            backgroundSize: 'contain',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: `${eventInfo.extendedProps.image ? 'transparent' : '#1f2937'}`,
+          }
+
         }
       />
 
