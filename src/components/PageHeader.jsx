@@ -1,8 +1,4 @@
-export default function PageHeader({
-  title,
-  subtitle,
-  backgroundImage,
-}) {
+export default function PageHeader({title, subtitle, backgroundImage}) {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full bg-slate-900">
       <div
