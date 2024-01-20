@@ -37,7 +37,7 @@ const officers = {
       {
         name: 'Logan Murray',
         title: 'Rocketry Director',
-        img: '/officers/logan_m.jpg',
+        img: '/officers/logan_m.jpg'
       },
       {
         name: 'Emmanuel Llanes',
@@ -46,6 +46,7 @@ const officers = {
       {
         name: 'Gabe Butuc',
         title: 'CR Chief Engineer',
+        img: '/officers/gabe.jpg',
       },
       {
         name: 'Andy Azucar',
@@ -54,6 +55,7 @@ const officers = {
       {
         name: 'Brennan',
         title: 'CR L1 Lead',
+        img: '/officers/brennan.jpg',
       },
     ],
   },
@@ -84,6 +86,7 @@ const officers = {
       {
         name: 'Ayesha Azhar',
         title: 'CR Marketing',
+        img: '/officers/ayesha.jpg',
       },
       {
         name: 'Diego Villegas',
@@ -190,6 +193,7 @@ const officers = {
       {
         name: 'Rohit Rao',
         title: 'CR Business',
+        img: '/officers/rohit.jpg',
       },
       {
         name: 'Xiomara Aragon',
