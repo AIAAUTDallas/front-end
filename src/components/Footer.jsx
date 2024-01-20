@@ -91,8 +91,8 @@ const Footer = () => {
               <Link className={styles.link} href="/newsletter">
                 Newsletter
               </Link>
-              <Link className={styles.link} href="/calendar">
-                Calendar
+              <Link className={styles.link} href="/events">
+                Events
               </Link>
               <Link className={styles.link} href="/team">
                 Team
