@@ -47,7 +47,7 @@ const officers = {
       {
         name: 'Henry Davis',
         title: 'L1 Lead',
-        img: "/officers/Davis_Henry_L1.JPG"
+        img: '/officers/Davis_Henry_L1.JPG',
       },
       {
         name: 'Ayesha Azhar',
@@ -62,28 +62,28 @@ const officers = {
       {
         name: 'Gabe Butuc',
         title: 'Chief Engineer',
-        img: "/officers/gabe.jpg"
+        img: '/officers/gabe.jpg',
       },
       {
-        name: "Emmanuel Llanes",
-        title: "Avionics Lead",
-        img: "/officers/emmanuel.JPG"
+        name: 'Emmanuel Llanes',
+        title: 'Avionics Lead',
+        img: '/officers/emmanuel.JPG',
       },
       {
-        name: "Anders Liesse",
-        title: "Structures Lead",
-        img: "/officers/Liesse_Anders_structures.JPG"
+        name: 'Anders Liesse',
+        title: 'Structures Lead',
+        img: '/officers/Liesse_Anders_structures.JPG',
       },
       {
-        name: "Brendan Dunlap",
-        title: "Payload Lead",
-        img: "/officers/Dunlap_Brendan_payload.JPG"
+        name: 'Brendan Dunlap',
+        title: 'Payload Lead',
+        img: '/officers/Dunlap_Brendan_payload.JPG',
       },
       {
-        name: "Jaszmine DeFranco",
-        title: "Simulation Lead",
-        img: "/officers/DeFranco_Jaszmine_simulations.JPG"
-      }
+        name: 'Jaszmine DeFranco',
+        title: 'Simulation Lead',
+        img: '/officers/DeFranco_Jaszmine_simulations.JPG',
+      },
     ],
   },
   ARC: {
