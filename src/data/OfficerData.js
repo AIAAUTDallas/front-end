@@ -40,23 +40,50 @@ const officers = {
         img: '/officers/logan_m.jpg',
       },
       {
-        name: 'Emmanuel Llanes',
-        title: 'CR Avionics',
+        name: 'Abeni Belay',
+        title: 'L1 Lead',
+        img: '/officers/Belay_Abeni_L1.JPG',
+      },
+      {
+        name: 'Henry Davis',
+        title: 'L1 Lead',
+        img: "/officers/Davis_Henry_L1.JPG"
+      },
+      {
+        name: 'Ayesha Azhar',
+        title: 'Media Lead',
+        img: '/officers/ayesha.jpg',
+      },
+      {
+        name: 'Rohit Rao',
+        title: 'Business Lead',
+        img: '/officers/rohit.jpg',
       },
       {
         name: 'Gabe Butuc',
-        title: 'CR Chief Engineer',
-        img: '/officers/gabe.jpg',
+        title: 'Chief Engineer',
+        img: "/officers/gabe.jpg"
       },
       {
-        name: 'Andy Azucar',
-        title: 'CR L1 Lead',
+        name: "Emmanuel Llanes",
+        title: "Avionics Lead",
+        img: "/officers/emmanuel.JPG"
       },
       {
-        name: 'Brennan',
-        title: 'CR L1 Lead',
-        img: '/officers/brennan.jpg',
+        name: "Anders Liesse",
+        title: "Structures Lead",
+        img: "/officers/Liesse_Anders_structures.JPG"
       },
+      {
+        name: "Brendan Dunlap",
+        title: "Payload Lead",
+        img: "/officers/Dunlap_Brendan_payload.JPG"
+      },
+      {
+        name: "Jaszmine DeFranco",
+        title: "Simulation Lead",
+        img: "/officers/DeFranco_Jaszmine_simulations.JPG"
+      }
     ],
   },
   ARC: {

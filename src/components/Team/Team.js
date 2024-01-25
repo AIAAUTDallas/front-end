@@ -28,7 +28,7 @@ function Team() {
         </div>
       </div>
       <h1 className="p-4 text-3xl md:text-5xl">DBF (Design Build Fly)</h1>
-      <div className-={style.cards}>
+      <div className={style.cards}>
         <div className="flex flex-wrap content-center justify-center gap-8">
           {officerList.DBF.data.map((member, index) => (
             <div key={index} className="flex min-h-[16vw] md:min-h-[24vw]">
