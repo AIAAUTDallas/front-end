@@ -88,7 +88,7 @@ const officers = {
   ARC: {
     data: [
       {
-        name: 'Joshua Price',
+        name: 'Josh Price',
         title: 'Interim Director',
         img: '/officers/josh.jpg'
       },
