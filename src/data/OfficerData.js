@@ -90,7 +90,7 @@ const officers = {
       {
         name: 'Joshua Price',
         title: 'Interim Director',
-        img: '/officers/josh.jpg'
+        img: '/officers/josh.jpg',
       },
       {
         name: 'Avram Bingham',
