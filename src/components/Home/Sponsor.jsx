@@ -7,7 +7,7 @@ import onpoynt from '../../../public/Partner/onpoynt.png';
 import utd from '../../../public/Partner/utd.png';
 import vectornav from '../../../public/Partner/vectornav.png';
 import L3Harris from '../../../public/Partner/L3Harris.png';
-import dwconsulting from '../../../public/Partner/dwconsulting.png';
+import dwconsulting from '../../../public/Partner/dwcs.png';
 import conlab from '../../../public/Partner/conlab.png';
 import spirit from '../../../public/Partner/spirit.png';
 import mouser from '../../../public/Partner/mouser.png';
@@ -101,9 +101,7 @@ const Sponsor = () => {
       <div className="flex flex-auto flex-row flex-wrap justify-center w-100">
         <Image
           className="box-content mt-3 object-contain cursor-pointer w-xl max-h-[10vh] w-auto px-8 max-w-[30vw]"
-          onClick={() =>
-            window.open('https://www.dwconsultingllc.com/', '_blank')
-          }
+          onClick={() => window.open('https://www.thedwcs.com/', '_blank')}
           src={dwconsulting}
           alt="dwconsulting"
         />

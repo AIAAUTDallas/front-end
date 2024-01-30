@@ -3,12 +3,9 @@
 import React, {useEffect, useState} from 'react';
 import dayjs from 'dayjs';
 import Head from 'next/head';
-
-import Event from '../../components/Calendar/Event';
 import Eventv2 from '../../components/Calendar/Eventv2';
 import styles from '../../styles/App.module.css';
-
-import unformattedEvents from '../../data/events';
+import PageHeader from '@/components/PageHeader';
 
 const Index = () => {
   const [sectionedEvents, setSectionedEvents] = useState(null);
@@ -54,6 +51,10 @@ const Index = () => {
         </title>
       </Head>
       <div className={styles.App}>
+        <PageHeader
+          title="Upcoming Events"
+          subtitle="Stay Tuned for Exciting Upcoming Events"
+        />
         <div className="fixed bottom-6 right-6 md:bottom-10 md:right-10 ">
           {/* up arrow */}
           <a
@@ -80,9 +81,12 @@ const Index = () => {
         <div className="container-md p-4 min-h-[95vh]">
           {/* <Calendar events={events.events}/> */}
           <div className="flex justify-between">
-            <h1 className="text-left text-5xl" id="upcoming-events-title">
+            {/* <h1
+              className="text-left text-3xl md:text-5xl"
+              id="upcoming-events-title"
+            >
               Upcoming Events
-            </h1>
+            </h1> */}
             <div className="flex flex-row flex-wrap max-w-[400px] justify-end">
               {sectionedEvents
                 ? Object.keys(sectionedEvents).map((monthYear, index) => {
@@ -123,7 +127,7 @@ const Index = () => {
               );
             })
           ) : (
-            <h1>loading...</h1>
+            <h2 className="text-white py-2">Loading...</h2>
           )}
         </div>
       </div>

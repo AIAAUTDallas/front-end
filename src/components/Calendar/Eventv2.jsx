@@ -21,6 +21,7 @@ export default function Eventv2({eventInfo}) {
   const endDate = dayjs(eventInfo.end).format('MMMM D, YYYY');
   const eventStartTime = dayjs(eventInfo.start).format('h:mm A');
   const eventEndTime = dayjs(eventInfo.end).format('h:mm A');
+  const image = eventInfo.extendedProps?.image ?? '/header_logo.png';
 
   return (
     // card wrapper
@@ -36,17 +37,15 @@ export default function Eventv2({eventInfo}) {
       {/* background image */}
       <div
         className="w-full h-[150px] md:h-[175px] p-2 rounded-md"
-        style={
-          eventInfo.extendedProps?.image
-            ? {
-                backgroundImage: `url(${eventInfo.extendedProps.image}?size=1024)`,
-                backgroundSize: 'contain',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                backgroundColor: 'white',
-              }
-            : null
-        }
+        style={{
+          backgroundImage: `url(${image}?size=1024)`,
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: `${
+            eventInfo.extendedProps.image ? 'transparent' : '#1f2937'
+          }`,
+        }}
       />
 
       {/* event title and description */}
