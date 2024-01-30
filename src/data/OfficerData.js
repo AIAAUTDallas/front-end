@@ -31,6 +31,14 @@ const officers = {
         title: 'DEC Director',
         img: '/officers/dan.jpg',
       },
+      {
+        name: 'Emily Nguyen',
+        title: 'Light Show Lead'
+      },
+      {
+        name: 'Marty Vaneskahian',
+        title: 'FPV Lead'
+      }
     ],
   },
   Rocketry: {
@@ -49,16 +57,6 @@ const officers = {
         name: 'Henry Davis',
         title: 'L1 Lead',
         img: '/officers/Davis_Henry_L1.JPG',
-      },
-      {
-        name: 'Ayesha Azhar',
-        title: 'Media Lead',
-        img: '/officers/ayesha.jpg',
-      },
-      {
-        name: 'Rohit Rao',
-        title: 'Business Lead',
-        img: '/officers/rohit.jpg',
       },
       {
         name: 'Gabe Butuc',
@@ -90,14 +88,18 @@ const officers = {
   ARC: {
     data: [
       {
-        name: 'Joel Augustine',
-        title: 'ARC Director',
+        name: 'Joshua Price',
+        title: 'Interim Director',
       },
       {
         name: 'Avram Bingham',
-        title: 'VAWT ARC Lead',
+        title: 'Project Lead',
         img: '/officers/avram.jpg',
       },
+      {
+        name: 'Clark Swartzfager',
+        title: 'Project Lead'
+      }
     ],
   },
   'Media & Marketing': {
@@ -118,7 +120,7 @@ const officers = {
       },
       {
         name: 'Diego Villegas',
-        title: 'Media Head',
+        title: 'Social Media Head',
         img: '/officers/diego.jpg',
       },
       {
@@ -138,6 +140,14 @@ const officers = {
         title: 'Poster Design',
         img: '/officers/wen.jpg',
       },
+      {
+        name: 'Dennis Lo',
+        title: 'DBF Marketing',
+      },
+      {
+        name: 'Thalia Pota',
+        title: 'Resident Photographer'
+      }
     ],
   },
   Web: {
@@ -159,6 +169,11 @@ const officers = {
         name: 'Tri Pham',
         title: 'Web Developer',
       },
+      {
+        name: 'Brennan Pease',
+        title: 'Web Developer',
+        img: '/officers/brennen.jpg'
+      }
     ],
   },
   DBF: {
@@ -199,10 +214,6 @@ const officers = {
         name: 'Edmund Pascalis',
         title: 'Treasurer',
         img: '/officers/edmund.jpg',
-      },
-      {
-        name: 'Dennis Lo',
-        title: 'DBF Marketing',
       },
       {
         name: 'Devansh Mahajan',
