@@ -24,7 +24,7 @@ const officers = {
       {
         name: 'Brendan Smith',
         title: 'DEC Director',
-        img: '/officers/brendan.jpg'
+        img: '/officers/brendan.jpg',
       },
       {
         name: 'Dan Bouzolin',
