@@ -33,12 +33,12 @@ const officers = {
       },
       {
         name: 'Emily Nguyen',
-        title: 'Light Show Lead'
+        title: 'Light Show Lead',
       },
       {
         name: 'Marty Vaneskahian',
-        title: 'FPV Lead'
-      }
+        title: 'FPV Lead',
+      },
     ],
   },
   Rocketry: {
@@ -98,8 +98,8 @@ const officers = {
       },
       {
         name: 'Clark Swartzfager',
-        title: 'Project Lead'
-      }
+        title: 'Project Lead',
+      },
     ],
   },
   'Media & Marketing': {
@@ -146,8 +146,8 @@ const officers = {
       },
       {
         name: 'Thalia Pota',
-        title: 'Resident Photographer'
-      }
+        title: 'Resident Photographer',
+      },
     ],
   },
   Web: {
@@ -172,8 +172,8 @@ const officers = {
       {
         name: 'Brennan Pease',
         title: 'Web Developer',
-        img: '/officers/brennen.jpg'
-      }
+        img: '/officers/brennen.jpg',
+      },
     ],
   },
   DBF: {
