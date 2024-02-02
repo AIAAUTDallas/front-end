@@ -35,7 +35,7 @@ const routes = [
       {
         name: 'Web',
         path: '/branch/Web',
-      }
+      },
     ],
   },
   {

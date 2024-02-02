@@ -12,7 +12,10 @@ export default function Branch({params}) {
 
   if (!brancheNames.includes(params.branch)) router.push('/');
 
-  const officerData = params.branch == 'Marketing' ? officers['Media & Marketing'] : officers[params.branch]
+  const officerData =
+    params.branch == 'Marketing'
+      ? officers['Media & Marketing']
+      : officers[params.branch];
 
   return (
     <div className="w-full">
