@@ -19,7 +19,7 @@ const MemberCard = ({img, name, title, description}) => {
           />
         </figure>
       )}
-      <div className="bg-[#0f172a] card-body text-white z-[1] rounded-md max-h-[30%] md:max-h-[20%] flex flex-col items-center justify-center p-1 md:p-4">
+      <div className="bg-[#0f172a] card-body text-white z-[1] rounded-md flex flex-col items-center justify-center p-1 md:p-4">
         <h2 className="card-title text-[3vw] md:text-lg m-0 h-fit leading-none">
           {name}
         </h2>

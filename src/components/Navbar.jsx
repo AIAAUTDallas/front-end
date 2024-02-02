@@ -4,41 +4,40 @@ import Link from 'next/link';
 import header_logo from '../../public/header_logo.png';
 
 const routes = [
-  // Uncomment this when branches are ready.
-  // {
-  //   name: 'Branches',
-  //   path: '/branches',
-  //   children: [
-  //     {
-  //       name: 'Drone Engineering Corps',
-  //       path: '/branches/dec',
-  //     },
-  //     {
-  //       name: 'Comet Rocketry',
-  //       path: '/branches/cr',
-  //     },
-  //     {
-  //       name: 'Design Build Fly',
-  //       path: '/branches/dbf',
-  //     },
-  //     {
-  //       name: 'Aerospace Research Corps',
-  //       path: '/branches/arc',
-  //     },
-  //     {
-  //       name: 'Business',
-  //       path: '/branches/business',
-  //     },
-  //     {
-  //       name: 'Marketing',
-  //       path: '/branches/marketing',
-  //     },
-  //     {
-  //       name: 'Web',
-  //       path: '/branches/web',
-  //     }
-  //   ],
-  // },
+  {
+    name: 'Branches',
+    path: '/branches',
+    children: [
+      {
+        name: 'Drone Engineering Corps',
+        path: '/branch/DEC',
+      },
+      {
+        name: 'Comet Rocketry',
+        path: '/branch/Rocketry',
+      },
+      {
+        name: 'Design Build Fly',
+        path: '/branch/DBF',
+      },
+      {
+        name: 'Aerospace Research Corps',
+        path: '/branch/ARC',
+      },
+      {
+        name: 'Business',
+        path: '/branch/Business',
+      },
+      {
+        name: 'Marketing',
+        path: '/branch/Marketing',
+      },
+      {
+        name: 'Web',
+        path: '/branch/Web',
+      }
+    ],
+  },
   {
     name: 'Newsletters',
     path: '/newsletters',
