@@ -12,7 +12,10 @@ export default function Branch({params}) {
 
   if (!brancheNames.includes(params.branch)) router.push('/');
 
-  const officerData = params.branch == 'Marketing' ? officers['Media & Marketing'] : officers[params.branch]
+  const officerData =
+    params.branch == 'Marketing'
+      ? officers['Media & Marketing']
+      : officers[params.branch];
 
   return (
     <div className="w-full">
@@ -21,14 +24,14 @@ export default function Branch({params}) {
         className={`bg-cover bg-center bg-no-repeat h-96 w-auto flex text-center items-center`}
       >
         <div className="w-full">
-          <h1>{params.branch}</h1>
+          <h1 className="text-5xl">{params.branch}</h1>
         </div>
       </div>
       <div className="flex flex-col items-center text-center w-full gap-y-5 bg-[#0a2647] py-8">
-        <h2 className="text-white">About</h2>
-        <p className="m-0 max-w-3xl">{branches[params.branch].about}</p>
+        <h2 className="text-white text-4xl">About</h2>
+        <p className="m-0 max-w-3xl text-xl">{branches[params.branch].about}</p>
 
-        <h2 className="text-white">Officers</h2>
+        <h2 className="text-white text-4xl">Officers</h2>
         <div className="grid grid-cols-2 gap-x-8">
           {officerData.data.map((officer, idx) => {
             return (
