@@ -1,9 +1,8 @@
 import Introduction from './Introduction';
-import Slider from './Slider';
-import Project from './Branches';
 import Branches from './Branches';
 import Sponsor from './Sponsor';
 import Head from 'next/head';
+import HeaderVideo from './HeaderVideo';
 
 const HomeScreen = () => {
   return (
@@ -12,7 +11,7 @@ const HomeScreen = () => {
         <title>Home | American Institute of Aeronautics and Astronautics</title>
       </Head>
       <div>
-        <Slider />
+        <HeaderVideo />
         <Introduction />
         <Branches />
         <Sponsor />
