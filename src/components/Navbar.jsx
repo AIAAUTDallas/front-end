@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import header_logo from '../../public/header_logo.png';
+import { useState } from 'react';
 
 const routes = [
   {
@@ -57,18 +58,33 @@ const routes = [
 ];
 
 export default function Navbar() {
-  function renderMenuLinkWithChildren(route) {
+  const [open, setOpen] = useState(false);
+
+  function RenderMenuLinkWithChildren({ route }) {
+    const [openHover, setOpenHover] = useState(false);
+
     return (
-      <li className="rounded-none" key={route.name} tabIndex={0}>
-        <details>
+      <li
+        className="rounded-none"
+        key={route.name}
+        tabIndex={0}
+        onMouseOver={() => setOpenHover(true)}
+        onMouseLeave={() => setOpenHover(false)}
+      >
+        <details open={openHover}>
           <summary className="text-lg text-white font-bold no-underline">
             {route.name}
           </summary>
-          <ul className="menu menu-sm dropdown-content z-[1] p-2 border-1 shadow bg-[#1746a2] w-72 rounded-none">
+          <ul
+            className="menu menu-sm dropdown-content z-[999] p-2 border-1 shadow bg-[#1746a2] w-72 rounded-none mt-0"
+            onMouseEnter={() => setOpenHover(true)}
+            onMouseLeave={() => setOpenHover(false)}
+          >
             {route.children.map((child) => {
               return (
                 <li className="rounded-none p-1" key={child.name}>
                   <Link
+                    onClick={() => setOpenHover(false)}
                     href={child.path}
                     className="text-lg text-white font-bold no-underline"
                   >
@@ -83,26 +99,29 @@ export default function Navbar() {
     );
   }
 
-  function renderMobileMenuItemWithChildren(route) {
+  function RenderMobileMenuItemWithChildren({ route, setOpen }) {
     return (
       <li className="rounded-none" key={route.name} tabIndex={0}>
-        <p className="text-lg text-white font-bold no-underline mb-0">
-          {route.name}
-        </p>
-        <ul>
-          {route.children.map((child) => {
-            return (
-              <li className="rounded-none p-1" key={child.name}>
-                <Link
-                  href={child.path}
-                  className="text-lg text-white font-bold no-underline"
-                >
-                  {child.name}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+        <details className="text-lg text-white font-bold no-underline mb-0">
+          <summary className="text-lg text-white font-bold no-underline">
+            {route.name}
+          </summary>
+          <ul className="menu-dropdown">
+            {route.children.map((child) => {
+              return (
+                <li className="rounded-none p-1" key={child.name}>
+                  <Link
+                    onClick={() => setOpen(false)}
+                    href={child.path}
+                    className="text-lg text-white font-bold no-underline"
+                  >
+                    {child.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </details>
       </li>
     );
   }
@@ -123,7 +142,7 @@ export default function Navbar() {
 
       {/* Links */}
       <div className="navbar-end hidden xl:flex items-center">
-        <ul className="menu menu-horizontal px-1 mb-0 gap-2">
+        <ul className="menu menu-horizontal hover:menu-dropdown-show px-1 mb-0 gap-2">
           {routes.map((route) => {
             if (!route?.children) {
               return (
@@ -138,56 +157,69 @@ export default function Navbar() {
               );
             }
 
-            return renderMenuLinkWithChildren(route);
+            return (
+              <RenderMenuLinkWithChildren route={route} key={route.name} />
+            );
           })}
         </ul>
       </div>
 
       {/* Mobile Menu */}
-      <div className="dropdown dropdown-end xl:hidden">
-        <label
-          tabIndex={0}
-          className="btn btn-ghost"
-          style={{
-            display: 'flex',
-          }}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="white"
+      <div className="dropdown dropdown-end z-[999] xl:hidden">
+        <details open={open} onMouseLeave={() => setOpen(false)}>
+          <summary className="btn p-0" onClick={() => setOpen(!open)}>
+            <label
+              tabIndex={0}
+              className="btn btn-ghost"
+              style={{
+                display: 'flex',
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="white"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+          </summary>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content z-[1] p-2 border-1 shadow bg-[#1746a2] w-72"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h8m-8 6h16"
-            />
-          </svg>
-        </label>
-        <ul
-          tabIndex={0}
-          className="menu menu-sm dropdown-content z-[1] p-2 border-1 shadow bg-[#1746a2] w-72"
-        >
-          {routes.map((route) => {
-            if (!route?.children) {
-              return (
-                <li className="rounded-none p-1" key={route.name}>
-                  <Link
-                    href={route.path}
-                    className="text-lg text-white font-bold no-underline"
-                  >
-                    {route.name}
-                  </Link>
-                </li>
-              );
-            }
+            {routes.map((route) => {
+              if (!route?.children) {
+                return (
+                  <li className="rounded-none p-1" key={route.name}>
+                    <Link
+                      onClick={() => setOpen(false)}
+                      href={route.path}
+                      className="text-lg text-white font-bold no-underline"
+                    >
+                      {route.name}
+                    </Link>
+                  </li>
+                );
+              }
 
-            return renderMobileMenuItemWithChildren(route);
-          })}
-        </ul>
+              return (
+                <RenderMobileMenuItemWithChildren
+                  route={route}
+                  setOpen={setOpen}
+                  key={route.name}
+                />
+              );
+            })}
+          </ul>
+        </details>
       </div>
     </nav>
   );
