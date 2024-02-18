@@ -2,6 +2,7 @@ import {REST} from '@discordjs/rest';
 import {API} from '@discordjs/core';
 import {NextResponse} from 'next/server';
 
+export const dynamic = 'force-dynamic'
 export async function GET(request) {
   try {
     const token = process.env.DISCORD_BOT_TOKEN;
