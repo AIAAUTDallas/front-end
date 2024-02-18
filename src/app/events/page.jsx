@@ -42,7 +42,7 @@ export default function Page() {
   const {
     data: sectionedEvents,
   } = useSWR('/api/calendar/events', fetcher, {
-    refreshInterval: 1000 * 60 * 60, // 1 hour
+    refreshInterval: 1000 * 60 * 30, // 30 minutes
   })
 
   return (
