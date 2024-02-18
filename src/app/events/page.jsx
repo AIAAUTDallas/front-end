@@ -1,47 +1,49 @@
 'use client';
 
-import React, {useEffect, useState} from 'react';
 import dayjs from 'dayjs';
 import Head from 'next/head';
 import Eventv2 from '../../components/Calendar/Eventv2';
 import styles from '../../styles/App.module.css';
 import PageHeader from '@/components/PageHeader';
+import useSWR from 'swr'
 
-const Index = () => {
-  const [sectionedEvents, setSectionedEvents] = useState(null);
+const fetcher = (url) => fetch(url).then((res) => res.json()).then((data) => {
+  const unformattedEvents = data?.transformedEvents;
 
-  useEffect(() => {
-    async function getEvents() {
-      const res = await fetch('/api/calendar/events');
-      const unformattedEvents = (await res.json())?.transformedEvents;
+  const filter = unformattedEvents.filter((event) => {
+    return event?.end && dayjs(event.end).isAfter(dayjs());
+  });
 
-      const filter = unformattedEvents.filter((event) => {
-        return event?.end && dayjs(event.end).isAfter(dayjs());
-      });
+  const sorted = filter.sort((a, b) => {
+    return dayjs(a.start).unix() - dayjs(b.start).unix();
+  });
 
-      const sorted = filter.sort((a, b) => {
-        return dayjs(a.start).unix() - dayjs(b.start).unix();
-      });
+  const sectioned = {};
+  sorted.map((event, index) => {
+    const monthYear = dayjs(event.start).format('MMMM YYYY');
 
-      const sectioned = {};
-      sorted.map((event, index) => {
-        const monthYear = dayjs(event.start).format('MMMM YYYY');
-
-        if (sectioned[monthYear] === undefined) {
-          sectioned[monthYear] = [];
-        }
-
-        // sectioned[monthYear].push(<Event key={event.id} eventInfo={event} />);
-        sectioned[monthYear].push(
-          <Eventv2 key={event.id + 'v2'} eventInfo={event} />,
-        );
-      });
-
-      setSectionedEvents(sectioned);
+    if (sectioned[monthYear] === undefined) {
+      sectioned[monthYear] = [];
     }
 
-    getEvents();
-  }, []);
+    // sectioned[monthYear].push(<Event key={event.id} eventInfo={event} />);
+    sectioned[monthYear].push(
+      {
+        id: event.id + 'v2',
+        eventInfo: event,
+      },
+    );
+  });
+
+  return sectioned;
+})
+
+export default function Page() {
+  const {
+    data: sectionedEvents,
+  } = useSWR('/api/calendar/events', fetcher, {
+    refreshInterval: 1000 * 60 * 60, // 1 hour
+  })
 
   return (
     <>
@@ -121,7 +123,9 @@ const Index = () => {
                     <h1 className="text-2xl font-bold">{monthYear}</h1>
                   </div>
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                    {sectionedEvents[monthYear]}
+                    {sectionedEvents[monthYear].map((event, index) => {
+                      return <Eventv2 key={event.id} eventInfo={event.eventInfo} />;
+                    })}
                   </div>
                 </div>
               );
@@ -134,5 +138,3 @@ const Index = () => {
     </>
   );
 };
-
-export default Index;
