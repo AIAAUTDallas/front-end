@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import header_logo from '../../public/header_logo.png';
-import { useState } from 'react';
+import {useState} from 'react';
 
 const routes = [
   {
@@ -60,7 +60,7 @@ const routes = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  function RenderMenuLinkWithChildren({ route }) {
+  function RenderMenuLinkWithChildren({route}) {
     const [openHover, setOpenHover] = useState(false);
 
     return (
@@ -99,7 +99,7 @@ export default function Navbar() {
     );
   }
 
-  function RenderMobileMenuItemWithChildren({ route, setOpen }) {
+  function RenderMobileMenuItemWithChildren({route, setOpen}) {
     return (
       <li className="rounded-none" key={route.name} tabIndex={0}>
         <details className="text-lg text-white font-bold no-underline mb-0">
