@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 const imageCollection = require.context('../../../public/gallery', false);
 const images = {
-  data: imageCollection.keys().map(imageCollection)
-}
+  data: imageCollection.keys().map(imageCollection),
+};
 
 export default function Gallery() {
   return (
@@ -15,9 +15,9 @@ export default function Gallery() {
               <div class="lg:w-1/3 sm:w-1/2 p-4 w-full" key={index}>
                 <a class="block relative h-72 rounded overflow-hidden">
                   <Image
-                      alt="gallery photo"
-                      class="object-cover object-center w-full h-full block"
-                      src={image.default.src}
+                    alt="gallery photo"
+                    class="object-cover object-center w-full h-full block"
+                    src={image.default.src}
                   />
                 </a>
               </div>
@@ -26,5 +26,5 @@ export default function Gallery() {
         </div>
       </section>
     </>
-  )
+  );
 }
