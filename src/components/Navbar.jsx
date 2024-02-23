@@ -40,6 +40,10 @@ const routes = [
     ],
   },
   {
+    name: 'Gallery',
+    path: '/gallery',
+  },
+  {
     name: 'Newsletters',
     path: '/newsletters',
   },
