@@ -24,12 +24,14 @@ export async function getBlogBySlug(slug) {
 
 export async function getAllBlogs() {
   const files = fs.readdirSync(contentDir);
+  if (files?.length === 0) return [];
+
   const blogs = await Promise.all(
     files.map(async (file) => {
       const slug = path.parse(file).name;
       return await getBlogBySlug(slug);
     }),
-  ) || [];
+  );
 
   blogs.sort((a, b) => {
     return a.metadata.date < b.metadata.date ? 1 : -1;
