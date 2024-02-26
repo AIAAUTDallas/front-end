@@ -48,6 +48,10 @@ const routes = [
     path: '/newsletters',
   },
   {
+    name: "Blogs",
+    path: "/blogs",
+  },
+  {
     name: 'Events',
     path: '/events',
   },

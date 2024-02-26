@@ -1,0 +1,285 @@
+/*!
+  Theme: GitHub Dark
+  Description: Dark theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-dark
+  Current colors taken from GitHub's CSS
+*/
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-canvas-default: #0d1117;
+    --color-canvas-subtle: #161b22;
+    --color-border-default: #30363d;
+    --color-border-muted: #21262d;
+  }
+}
+
+.hljs {
+  color: #c9d1d9;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #ff7b72;
+}
+
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #d2a8ff;
+}
+
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #79c0ff;
+}
+
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #a5d6ff;
+}
+
+.hljs-built_in,
+.hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #ffa657;
+}
+
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #8b949e;
+}
+
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #7ee787;
+}
+
+.hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #c9d1d9;
+}
+
+.hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #1f6feb;
+  font-weight: bold;
+}
+
+.hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #f2cc60;
+}
+
+.hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #c9d1d9;
+  font-style: italic;
+}
+
+.hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #c9d1d9;
+  font-weight: bold;
+}
+
+.hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #aff5b4;
+  background-color: #033a16;
+}
+
+.hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #ffdcd7;
+  background-color: #67060c;
+}
+
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+  /* purposely ignored */
+}
+
+ul {
+  list-style: disc !important;
+}
+ol {
+  list-style: decimal !important;
+}
+
+li {
+  @apply my-2;
+}
+
+menu, ol, ul {
+  margin-left: 15px !important;
+  padding-left: 15px !important;
+}
+
+ul ul,
+ol ul {
+  list-style: circle !important;
+  margin-left: 15px !important;
+}
+ol ol,
+ul ol {
+  list-style: lower-latin !important;
+  margin-left: 15px !important;
+}
+ul ol ul,
+ul ul ol,
+ol ul ul,
+ol ol ul {
+  list-style: square !important;
+  margin-left: 15px !important;
+}
+
+ol ol ol,
+ol ol ul,
+ol ul ol,
+ol ul ul,
+ul ol ol,
+ul ol ul,
+ul ul ol,
+ul ul ul {
+  list-style: none !important;
+  margin-left: 15px !important;
+}
+
+pre {
+  background-color: #0d1117;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.markdown {
+  text-align: center;
+  background-color: #0f172a;
+}
+
+.markdown p,
+.markdown li,
+.markdown blockquote,
+.markdown table,
+.markdown pre,
+.markdown img,
+.markdown iframe,
+.markdown hr {
+  @apply text-[#c9d1d9] my-[1rem] leading-8 text-lg;
+}
+
+.markdown p {
+  @apply text-lg text-[#c9d1d9] my-[1rem] leading-8;
+}
+
+.markdown iframe {
+  @apply w-full h-64 md:h-96 my-8 rounded-lg;
+}
+
+.markdown .content img {
+  @apply w-full h-auto my-8 rounded-lg object-cover;
+}
+
+.markdown blockquote {
+  @apply border-l-4 border-gray-400 pl-4 my-4 italic;
+}
+
+.markdown h2 {
+  @apply text-2xl font-bold md:text-4xl my-6;
+}
+
+.markdown h3 {
+  @apply text-xl font-bold md:text-2xl my-4;
+}
+
+.markdown h4 {
+  @apply text-lg font-bold md:text-xl my-2;
+}
+
+.markdown table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.markdown tr {
+  border-top: 1px solid var(--color-border-muted);
+}
+
+.markdown th {
+  font-weight: 600;
+  background-color: var(--color-canvas-subtle);
+}
+
+.markdown td,
+.markdown th {
+  padding: 6px 13px;
+  border: 1px solid var(--color-border-default);
+}
+
+.markdown th {
+  font-weight: 600;
+}
+
+.markdown table img {
+  background-color: transparent;
+}
+
+@media (max-width: 767px) {
+  .fc-toolbar.fc-header-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk:nth-child(1) {
+    order: 3;
+  }
+  .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk:nth-child(2) {
+    order: 1;
+  }
+  .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk:nth-child(3) {
+    order: 2;
+  }
+}
+
+
+
