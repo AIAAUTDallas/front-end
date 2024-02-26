@@ -24,7 +24,7 @@ export async function getBlogBySlug(slug) {
 
 export async function getAllBlogs() {
   const files = fs.readdirSync(contentDir);
-  if (files?.length === 0) return [];
+  if (files?.length === 1) return [];
 
   const blogs = await Promise.all(
     files.map(async (file) => {
