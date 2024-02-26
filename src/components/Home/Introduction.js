@@ -1,14 +1,14 @@
 const Introduction = () => {
   return (
-    <div className="py-20 px-4 md:px-20">
+    <div className="py-20 px-8 md:px-20">
       {/* introduction and video */}
-      <div className="grid grid-cols-1 gap-16 min-h-[64svh] content-center lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-16 min-h-[100svh] content-center lg:grid-cols-2">
         {/* introduction */}
         <div className="flex flex-col justify-center items-center">
           {' '}
           {/* title */}
           <h1 className="text-5xl my-4">Who we are</h1>
-          <p className="leading-relaxed text-lg">
+          <p className="leading-relaxed text-lg mb-4">
             American Institute of Aeronautics and Astronautics (AIAA) is the
             principal society of aerospace engineers and scientists. At the
             University of Texas at Dallas (UTD), we are a project-based student
@@ -26,7 +26,7 @@ const Introduction = () => {
         </div>
 
         {/* video */}
-        <div className="h-[500px]">
+        <div className="h-[300px] md:h-[500px]">
           <iframe
             className="w-full h-full rounded-xl"
             src="https://www.youtube.com/embed/xeU48eGGcwc"

@@ -17,7 +17,7 @@ export default function Slider() {
             <Image
               priority={true}
               placeholder={'blur'}
-              className="object-cover h-[300px] md:h-[600px]"
+              className="object-cover h-[92svh]"
               src={slider1}
               alt={
                 'AIAA general meeting with a people sitting looking towards the front'
@@ -28,7 +28,7 @@ export default function Slider() {
             <Image
               priority={true}
               placeholder={'blur'}
-              className="object-cover h-[300px] md:h-[600px]"
+              className="object-cover h-[92svh]"
               src={slider2}
               alt={
                 'AIAA president giving an introduction in the general meeting'
@@ -39,7 +39,7 @@ export default function Slider() {
             <Image
               priority={true}
               placeholder={'blur'}
-              className="object-cover h-[300px] md:h-[600px]"
+              className="object-cover h-[92svh]"
               src={slider3}
               alt={'AIAA general meeting guest sitting in room'}
             />
@@ -48,7 +48,7 @@ export default function Slider() {
             <Image
               priority={true}
               placeholder={'blur'}
-              className="object-cover h-[300px] md:h-[600px]"
+              className="object-cover h-[92svh]"
               src={slider4}
               alt={'AIAA president talking about the organization to a people'}
             />
@@ -57,7 +57,7 @@ export default function Slider() {
             <Image
               priority={true}
               placeholder={'blur'}
-              className="object-cover h-[300px] md:h-[600px]"
+              className="object-cover h-[92svh]"
               src={slider5}
               alt={'AIAA officer and members having a laugh'}
             />
