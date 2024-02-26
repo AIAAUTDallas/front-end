@@ -16,14 +16,7 @@ import NTBAA from '../../../public/Partner/NTBAA.png';
 const Sponsor = () => {
   return (
     <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        // paddingTop: '2rem',
-        paddingBottom: '2rem',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-      }}
+      className='flex flex-col py-8 justify-around items-center'
     >
       <h1 className="text-lg md:text-[3vw] mb-0 mt-[1vh] md:mt-8">Sponsors</h1>
 
