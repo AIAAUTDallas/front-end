@@ -15,9 +15,7 @@ import iBioRFCASL from '../../../public/Partner/iBioRFCASL.png';
 import NTBAA from '../../../public/Partner/NTBAA.png';
 const Sponsor = () => {
   return (
-    <div
-      className='flex flex-col py-8 justify-around items-center'
-    >
+    <div className="flex flex-col py-8 justify-around items-center">
       <h1 className="text-lg md:text-[3vw] mb-0 mt-[1vh] md:mt-8">Sponsors</h1>
 
       {/* <div className="flex flex-auto flex-row flex-wrap justify-center w-100">
