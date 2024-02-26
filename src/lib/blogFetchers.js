@@ -29,7 +29,7 @@ export async function getAllBlogs() {
       const slug = path.parse(file).name;
       return await getBlogBySlug(slug);
     }),
-  );
+  ) || [];
 
   blogs.sort((a, b) => {
     return a.metadata.date < b.metadata.date ? 1 : -1;
